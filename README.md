@@ -59,8 +59,7 @@ A estrutura básica de arquivos é organizada da seguinte forma:
 - [ ] melhor descrição da estrutura de arquivos - [#1](../../issues/1)
 - [ ] melhor descrição dos outros comandos do jekyll - [#2](../../issues/2)
 - [ ] adicionar checker para dependências - [#3](../../issues/3)
-- [x] adicionar todo no readme - [#4](../../issues/4)
-- [ ] refatorar SEO - [#5](../../issues/5)
+- [ ] refatorar SEO - [#4](../../issues/4)
 
 ## Problemas?
 
