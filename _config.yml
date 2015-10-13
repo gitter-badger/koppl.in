@@ -1,0 +1,47 @@
+name: Sérgio Kopplin
+
+# utilizado em diversas tags <a>
+baseurl: /
+
+# url de base para imagens
+url: http://koppl.in
+
+# utitilizado na meta tag de compartilhamento de redes sociais
+domain_name: 'http://koppl.in/'
+
+# numero de posts por pagina
+paginate: 5
+
+# removendo do build
+exclude: [README.md, vendor, Gemfile, Gemfile.lock, Rakefile]
+
+# adicionando tag do disqus
+disqus: sergiokopplin
+
+# bio que vem no rodape dos posts
+bio: 'Baterista desde sempre. Programador desde 2012. Atualmente trabalhando como Front-end Developer na Catho! Formado em Sistemas para Internet. Caçando relíquias na Internet. Morador de Nárnia e Discípulo de Cristo'
+
+# google analytics
+analytics: 'UA-67821299-1'
+
+# foto do autor
+picture: '/assets/images/profile.jpg'
+
+# textos de apoio
+newer_posts: 'Posts Recentes'
+older_posts: 'Posts Antigos'
+title: 'Um baterista programador de Nárnia'
+
+# url dos posts e pages para criação das coleções
+permalink: /:title/
+
+# sociais
+twitter: 'koppl1n'
+
+# compilando e minificando o sass
+sass:
+  style: compressed
+
+# dependências de gems
+gems:
+  - jemoji

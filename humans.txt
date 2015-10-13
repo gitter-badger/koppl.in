@@ -1,0 +1,9 @@
+# humanstxt.org/
+
+# TEAM
+
+	Sergio Kopplin - Developer
+
+# TECHNOLOGY
+
+	HTML5, CSS3, JS, JEKYLL

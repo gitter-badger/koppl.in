@@ -1,0 +1,39 @@
+---
+title: "Olá mundo"
+layout: post
+date: 2015-02-25 17:40
+tags: inicio
+description: "Um novo blog acaba de surgir, nesse caso é o meu blog. Acredito que por ser meio perfeccionista, ele tenha demorado quase 1 ano pra ser terminado. Mas agora que consegui chegar num consenso entre meu lado front-end e meu lado back-end, acredito que posso seguir em frente."
+trilha_nome: Coldplay - Yellow
+trilha: http://open.spotify.com/strack/3AJwUDP919kvQ9QcozQPxg
+passagem: Ne 8:10
+passagem_link: https://www.bible.com/pt/bible/211/neh.8.10.ntlh
+img: ola-mundo/yellow.jpg
+---
+Um novo blog acaba de surgir, nesse caso é o meu blog. Acredito que por ser meio perfeccionista, ele tenha demorado quase 1 ano pra ser terminado. Mas agora que consegui chegar num <a href="http://pt.wikipedia.org/wiki/Consenso" target="_blank">consenso</a> entre meu lado front-end e meu lado back-end, acredito que posso seguir em frente.
+
+<!--more-->
+
+![Yellow](/assets/media/ola-mundo/yellow.jpg)
+
+<p class="img-legenda">fonte: google images</p>
+
+Emoji :+1:!
+
+Hey @koppl1n, what do you think of this?
+
+Pensando em "como as estrelas brilham pra mim", decidi que precisava de um site, de um blog, de um lugar meu na internet. Um lugar para as minhas idéias, meus estudos e talvez meus narcisismos.
+
+Nesse lugar eu pretendo conversar de WEB. Web do qual me apaixonei de 2 anos pra cá (2012) e que me fez trocar de profissão, (antigamente era <a href="http://pt.wiktionary.org/wiki/musicista" target="_blank">Musicista</a>) e que inclusive, me fez fazer uma faculdade.
+
+Tenho estudado muito sobre o mundo do front-end e o que ele tem a oferecer. A verdade é que me sinto mais amigo do front-end, mesmo que conheça o back-end, ele é só um colega que eu vejo no trabalho.
+
+Uma das coisas que me fez criar um blog, tanto quanto o resto das coisas na vida, foi a influência. Influência de ver outros compartilhando conteúdo, criando conteúdo, compartilhando ideias, ...
+
+####Influências
+Nesse caminho, tenho alguns específicos e gostaria de citá-los:
+
+* @vitorbritto - [vitorbritto.com.br](http://www.vitorbritto.com.br/blog/) - uma referência.
+* @hugobessaa - [hugobessa.com.br](http://www.hugobessa.com.br/) - um cara que eu conheci no twitter.
+
+Espero compartilhar o que sei para ajudar os que ainda não sabem e aprender cada dia mais.
