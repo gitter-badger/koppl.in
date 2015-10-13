@@ -75,7 +75,7 @@ Inspirado por Zeno Rocha, Hugo Bessa, Vitor Britto e William Justen.
 
 [sitelink]: http://koppl.in
 [twitter]: http://i.imgur.com/tXSoThF.png
-[travis]: https://travis-ci.org/sergiokopplin/koppl.in.svg
+[travis]: https://travis-ci.org/sergiokopplin/kopplin-website.svg
 [jekyll]: http://jekyllrb.com/
 [git]: http://git-scm.com/downloads
 [ruby]: http://www.ruby-lang.org/pt/downloads/
