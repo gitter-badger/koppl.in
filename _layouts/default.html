@@ -2,7 +2,7 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -65,6 +65,10 @@ layout: compress
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    {% if page.keywords %}
+    <meta name="keywords" content="{% for keyword in page.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}" />
+    {% endif %}
 
     <style type="text/css">
       {% capture include_to_scssify %}
