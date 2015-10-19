@@ -78,6 +78,14 @@ layout: compress
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
 
+    <!-- schema.org ~ author do site -->
+    <div class="hidden" itemscope itemtype="http://schema.org/Person">
+        <img itemprop="image" src="{{ site.url }}{{ site.picture }}" alt="{{ site.name }}">
+        <span itemprop="name">{{ site.name }}</span>
+        <span itemprop="jobTitle">{{ site.job_title }}</span>
+        <span itemprop="email">{{ site.email }}</span>
+    </div>
+
     {{ content }}
 
     <footer class="site-footer clearfix">
