@@ -10,14 +10,13 @@ keywords:
 - structured-data
 - meta-data
 - semantyc
-description: "Description"
-trilha_nome: Birdy - Wings
-trilha: http://play.spotify.com/album/6rgoVsDl432kAvqmGfrwZp
-img: carmesim/carmesim.png
-
+description: "Melhore o posicionamento e como os robôs entendem o seu site com o Schema.org."
+trilha_nome: John Mayer - XO
+trilha: https://open.spotify.com/track/7cpCU3Denug5NGZsSpQl8v
+img: schema/main.jpg
 ---
 
-Melhore o posicionamento e como os robôs entendem o seu site com o Schema.org
+Melhore o posicionamento e como os robôs entendem o seu site com o Schema.org.
 
 <!-- more -->
 
@@ -31,7 +30,7 @@ Dentro do [Schema.org][s] você encontra todas as tags necessários e sua docume
 (**confesso que achei um pouco raso demais**), e depois de aplicá-las você pode
  testar na ferramenta do Google dedicada para isso, [Structured Data Testing Tool][g].
 
-Aplicar no meu site foi bem simples, e foi dividido em 3 partes.
+Vamos então aplicar tudo isso na prática.
 
 ### Listagem de posts.
 
@@ -112,25 +111,31 @@ mostra o tipo do dado referenciado, podendo ser uma descrição, nome de autor, 
 
 Logo, dentro do nosso exemplo colocamos a flag que identifica que é um post de blog.
 
-    <main role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+{% highlight html %}
+<main role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+{% endhighlight %}
 
 Logo em seguida identificamos o artigo em sí:
 
-    <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+{% highlight html %}
+<article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+{% endhighlight %}
 
 E pra finalizar adicionamos as tags necessários nos itens restantes.
 
-    <h2 itemprop="headline"><a href="#" itemprop="url">Título do Post</a></h2>
+{% highlight html %}
+<h2 itemprop="headline"><a href="#" itemprop="url">Título do Post</a></h2>
 
-    <section itemprop="description">Resumo do Post</section>
+<section itemprop="description">Resumo do Post</section>
 
-    <footer>
-      <span itemprop="author">Nome do Author</span>
-      em
-        <span itemprop="keywords">lista, de, categorias</span>
+<footer>
+  <span itemprop="author">Nome do Author</span>
+  em
+    <span itemprop="keywords">lista, de, categorias</span>
 
-      <time datetime="10-19-2015" itemprop="datePublished" content="10-19-2015>19-10-2015</time>
-    </footer>
+  <time datetime="10-19-2015" itemprop="datePublished" content="10-19-2015>19-10-2015</time>
+</footer>
+{% endhighlight %}
 
 Nesse momento o nosso código pode ser testado na ferramenta do Google, ficando assim:
 
@@ -139,15 +144,17 @@ Fonte: [Google Structured Data Testing Tool][img-3]
 
 Note que o Google evidenciou uma tag que faltou, você pode agora adicioná-la no nosso exemplo pra ficar com tudo redondinho. :smile:
 
-    <img src="url-da-imagem.jpg" alt="Imagem de exemplo" itemprop="image" />
+{% highlight html %}
+<img src="url-da-imagem.jpg" alt="Imagem de exemplo" itemprop="image" />
+{% endhighlight %}
 
 É isso pessoal, até a próxima.
 
 #### Referências:
-- Loop Infinito
-- schemaorg
-- developers google
-- queryclick
+- [Loop Infinito][l]
+- [Schema.org][s]
+- [Google Developers Testing Tool][img-3]
+- [QueryClick][img]
 
 [s]: http://schema.org
 [g]: https://developers.google.com/structured-data/testing-tool/
