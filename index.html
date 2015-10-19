@@ -30,7 +30,7 @@ cover: /assets/images/wardrobe.jpg
     {% for post in paginator.posts %}
         <article class="post" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
             <span class="hidden" itemprop="publisher">koppl.in</span>
-            <img src="{{ site.url }}/assets/images/{{ post.img }}" alt="" class="hidden" itemprop="image">
+            <img src="{{ site.url }}/assets/images/{{ post.img }}" alt="{{ post.title }} - Imagem" class="hidden" itemprop="image">
 
             <header class="post-header">
                 <h2 class="post-title" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
