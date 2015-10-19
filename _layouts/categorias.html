@@ -25,8 +25,10 @@ sobre: true
                     <h2>{{ category[0] }}:</h2>
                     {% for posts in category %}
                         {% for post in posts %}
-                            <img src="{{ site.url }}/assets/images/{{ post.img }}" alt="{{ post.title }} - Imagem" class="hidden" itemprop="image">
-                            {% if post.url %}<a href="{{ post.url }}" itemprop="url"><span itemprop="headline">{{ post.title }}</span><span class="post-list-data" itemprop="datePublished" content="12-12-2012">{{ post.date | date_to_string }}</span></a>{% endif %}
+                            {% if post.url %}
+                                <a href="{{ post.url }}" itemprop="url"><span itemprop="headline">{{ post.title }}</span><span class="post-list-data" itemprop="datePublished" content="12-12-2012">{{ post.date | date_to_string }}</span></>
+                                <img src="{{ site.url }}/assets/images/{{ post.img }}" alt="{{ post.title }} - Imagem" class="hidden" itemprop="image">        
+                            {% endif %}
                         {% endfor %}
                     {% endfor %}
                 </article>
