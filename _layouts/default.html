@@ -68,6 +68,8 @@ layout: compress
 
     {% if page.keywords %}
     <meta name="keywords" content="{% for keyword in page.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}" />
+    {% else %}
+    <meta name="keywords" content="{% for keyword in site.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}" />
     {% endif %}
 
     <style type="text/css">
