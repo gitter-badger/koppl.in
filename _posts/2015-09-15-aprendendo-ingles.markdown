@@ -3,6 +3,12 @@ title: "Aprendendo Inglês"
 layout: post
 date: 2015-09-15 23:52
 categories: ingles
+keywords:
+- inglês
+- english
+- aprendendo
+- howto
+- duolingo
 description: "Olá, já parou para estudar inglês hoje? Pois é, tenho feito isso durante algum tempo e queria colocar as ferramentas que eu uso aqui nesse post para ajudar outras pessoas. O inglês é essencial hoje em dia, e como não temos como fugir disso, então bora aprender."
 trilha_nome: Foo Fighters - My Hero
 trilha: https://open.spotify.com/track/7u5dBtASrtOuBTTZjJrvuJ

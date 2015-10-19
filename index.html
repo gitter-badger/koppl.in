@@ -8,6 +8,7 @@ cover: /assets/images/wardrobe.jpg
     <nav class="main-nav overlay clearfix">
         <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Inscreva-se</a>
     </nav>
+
     <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
@@ -17,25 +18,31 @@ cover: /assets/images/wardrobe.jpg
             </h2>
         </div>
     </div>
+
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
-<main id="content" class="content" role="main">
+<main id="content" class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     <div class="extra-pagination inner">
         {% include pagination.html %}
     </div>
 
     {% for post in paginator.posts %}
-        <article class="post">
+        <article class="post" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+            <span class="hidden" itemprop="publisher">koppl.in</span>
+            <img src="{{ site.url }}/assets/images/{{ post.img }}" alt="{{ post.title }} - Imagem" class="hidden" itemprop="image">
+
             <header class="post-header">
-                <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h2 class="post-title" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
             </header>
-            <section class="post-excerpt">
-                {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">&raquo;</a>
+
+            <section class="post-excerpt" itemprop="description">
+                {{ post.excerpt }}
             </section>
+
             <footer class="post-meta">
                 <img class="author-thumb" src="{{ site.picture }}" alt="Foto do autor" nopin="nopin" />
-                {{ site.name }}
+                <span itemprop="author">{{ site.name }}</span>
                 {% if post.categories.size > 0 %}
                     em
                     {% for category in post.categories %}{% if forloop.last == false %}
@@ -44,7 +51,8 @@ cover: /assets/images/wardrobe.jpg
                         {{ category }}
                     {% endif %}{% endfor %}
                 {% endif %}
-                <time class="post-date" datetime="{{ post.date | date:"%d-%m-%Y" }}">
+                <span class="hidden" itemprop="keywords">{% for keyword in post.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}</span>
+                <time class="post-date" datetime="{{ post.date | date:"%d-%m-%Y" }}" itemprop="datePublished" content="{{ post.date | date:"%m-%d-%Y" }}">
                     {{ post.date | date_to_string }}
                 </time>
             </footer>

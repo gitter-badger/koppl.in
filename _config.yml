@@ -21,6 +21,9 @@ disqus: sergiokopplin
 # bio que vem no rodape dos posts
 bio: 'Baterista desde sempre. Programador desde 2012. Atualmente trabalhando como Front-end Developer na Catho! Formado em Sistemas para Internet. Caçando relíquias na Internet. Morador de Nárnia e Discípulo de Cristo'
 
+# trabalho
+job_title: Desenvolvedor Front-end
+
 # google analytics
 analytics: 'UA-67821299-1'
 
@@ -45,3 +48,6 @@ sass:
 # dependências de gems
 gems:
   - jemoji
+
+# social
+email: sergiokopplin@gmail.com
