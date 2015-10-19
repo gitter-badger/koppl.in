@@ -17,15 +17,16 @@ sobre: true
     </div>
 </header>
 
-<main class="content" role="main">
+<main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     <article class="post">
         <section class="post-content">
             {% for category in site.categories %}
-                <article class="post-list" id="{{ category[0] }}">
+                <article class="post-list" id="{{ category[0] }}" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                     <h2>{{ category[0] }}:</h2>
                     {% for posts in category %}
                         {% for post in posts %}
-                            {% if post.url %}<a href="{{ post.url }}">{{ post.title }}<span class="post-list-data">{{ post.date | date_to_string }}</span></a>{% endif %}
+                            <img src="{{ site.url }}/assets/images/{{ post.img }}" alt="{{ post.title }} - Imagem" class="hidden" itemprop="image">
+                            {% if post.url %}<a href="{{ post.url }}" itemprop="url"><span itemprop="headline">{{ post.title }}</span><span class="post-list-data" itemprop="datePublished" content="12-12-2012">{{ post.date | date_to_string }}</span></a>{% endif %}
                         {% endfor %}
                     {% endfor %}
                 </article>
