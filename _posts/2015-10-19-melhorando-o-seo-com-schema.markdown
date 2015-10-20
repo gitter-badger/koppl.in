@@ -17,10 +17,6 @@ img: schema/main.jpg
 
 ---
 
-Melhore o posicionamento e como os robôs entendem o seu site com o Schema.org.
-
-<!-- more -->
-
 Tinha uma tarefa no meu **backlog** para isso. Passei a olhar algumas referências
 e cá estou depois de ter refeito essa parte desse site.
 

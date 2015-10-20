@@ -17,8 +17,6 @@ img: carmesim/carmesim.png
 ---
 Sublime Text 3 Theme. A mix from the Dracula and the Spacegray.
 
-<!--more-->
-
 A set of custom UI themes for Sublime Text 2/3 based on [Spacegray](https://github.com/kkga/spacegray). Comes with [Dracula](https://github.com/zenorocha/dracula-theme) color scheme.
 
 *All the credits to the creators of themes Dracula and Spacegray!*

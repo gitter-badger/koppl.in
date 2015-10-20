@@ -40,6 +40,7 @@ permalink: /:title/
 
 # sociais
 twitter: 'koppl1n'
+email: sergiokopplin@gmail.com
 
 # compilando e minificando o sass
 sass:
@@ -52,9 +53,6 @@ highlighter: pygments
 # dependências de gems
 gems:
   - jemoji
-
-# social
-email: sergiokopplin@gmail.com
 
 # keywords pra páginas estáticas
 keywords:
