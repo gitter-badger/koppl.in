@@ -45,6 +45,10 @@ twitter: 'koppl1n'
 sass:
   style: compressed
 
+# markdown
+markdown: kramdown
+highlighter: pygments
+
 # dependências de gems
 gems:
   - jemoji

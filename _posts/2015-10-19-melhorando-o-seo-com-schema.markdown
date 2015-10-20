@@ -14,6 +14,7 @@ description: "Melhore o posicionamento e como os robôs entendem o seu site com 
 trilha_nome: John Mayer - XO
 trilha: https://open.spotify.com/track/7cpCU3Denug5NGZsSpQl8v
 img: schema/main.jpg
+
 ---
 
 Melhore o posicionamento e como os robôs entendem o seu site com o Schema.org.
@@ -26,9 +27,9 @@ e cá estou depois de ter refeito essa parte desse site.
 Confesso que não achei complicado e nem difícil de implementar, até porquê o
 material existente sobre isso é amplo e os testes são feitos com muita simplicidade.
 
-Dentro do [Schema.org][s] você encontra todas as tags necessários e sua documentação
-(**confesso que achei um pouco raso demais**), e depois de aplicá-las você pode
- testar na ferramenta do Google dedicada para isso, [Structured Data Testing Tool][g].
+Dentro do [Schema.org][s] você encontra todas as tags necessários e sua documentação,
+e depois de aplicá-las você pode testar na ferramenta do Google dedicada para isso,
+[Structured Data Testing Tool][g].
 
 Vamos então aplicar tudo isso na prática.
 
@@ -38,21 +39,6 @@ Na home do site existe a listagem de posts, e o HTML era mais ou menos assim:
 
 {% highlight html %}
 <main role="main">
-  ...
-  <article role="article">
-    <h2><a href="#">Título do Post</a></h2>
-
-    <section>Resumo do Post</section>
-
-    <footer>
-      <span>Nome do Author</span>
-        em
-        lista, de, categorias
-
-      <time datetime="19-10-2015">19-10-2015</time>
-    </footer>
-  </article>
-  ...
 </main>
 {% endhighlight %}
 
@@ -84,21 +70,18 @@ E é assim que vamos retornar ao nosso código e aplicar as tags adequadas no no
 
 {% highlight html %}
 <main role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-  ...
-  <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-    <h2 itemprop="headline"><a href="#" itemprop="url">Título do Post</a></h2>
+    <article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <h2 itemprop="headline"><a href="#" itemprop="url">Título do Post</a></h2>
+        <section itemprop="description">Resumo do Post</section>
 
-    <section itemprop="description">Resumo do Post</section>
+        <footer>
+            <span itemprop="author">Nome do Author</span>
+            em
+            <span itemprop="keywords">lista, de, categorias</span>
 
-    <footer>
-      <span itemprop="author">Nome do Author</span>
-        em
-        <span itemprop="keywords">lista, de, categorias</span>
-
-      <time datetime="10-19-2015" itemprop="datePublished" content="10-19-2015>19-10-2015</time>
-    </footer>
-  </article>
-  ...
+            <time datetime="10-19-2015" itemprop="datePublished" content="10-19-2015">19-10-2015</time>
+        </footer>
+    </article>
 </main>
 {% endhighlight %}
 
@@ -125,15 +108,13 @@ E pra finalizar adicionamos as tags necessários nos itens restantes.
 
 {% highlight html %}
 <h2 itemprop="headline"><a href="#" itemprop="url">Título do Post</a></h2>
-
 <section itemprop="description">Resumo do Post</section>
-
 <footer>
-  <span itemprop="author">Nome do Author</span>
-  em
+    <span itemprop="author">Nome do Author</span>
+    em
     <span itemprop="keywords">lista, de, categorias</span>
 
-  <time datetime="10-19-2015" itemprop="datePublished" content="10-19-2015>19-10-2015</time>
+    <time datetime="10-19-2015" itemprop="datePublished" content="10-19-2015">19-10-2015</time>
 </footer>
 {% endhighlight %}
 
