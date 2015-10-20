@@ -45,13 +45,14 @@ post_class: post-template
         </section>
 
         <footer class="post-footer">
-                <figure class="author-image">
-                    <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.picture }})">
-                </figure>
-                <section class="author">
-                    <h4 itemprop="author">{{ site.name }}</h4>
-                    <p>{{ site.bio }}</p>
-                </section>
+            <figure class="author-image">
+                <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.picture }})"></a>
+            </figure>
+
+            <section class="author">
+                <h4>{{ site.name }}</h4>
+                <p>{{ site.bio }}</p>
+            </section>
 
             {% include share.html %}
             {% include disqus.html %}
