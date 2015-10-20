@@ -35,6 +35,18 @@ Na home do site existe a listagem de posts, e o HTML era mais ou menos assim:
 
 {% highlight html %}
 <main role="main">
+    <article>
+        <h2><a href="#">Título do Post</a></h2>
+        <section>Resumo do Post</section>
+
+        <footer>
+            <span>Nome do Author</span>
+            em
+            <span>lista, de, categorias</span>
+
+            <time datetime="10-19-2015">19-10-2015</time>
+        </footer>
+    </article>
 </main>
 {% endhighlight %}
 
