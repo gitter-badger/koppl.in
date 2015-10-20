@@ -14,6 +14,19 @@ description: "Melhore o posicionamento e como os robôs entendem o seu site com 
 trilha_nome: John Mayer - XO
 trilha: https://open.spotify.com/track/7cpCU3Denug5NGZsSpQl8v
 img: schema/main.jpg
+comments: true
+related:
+  - title: "Loop Infinito - Microdata"
+    url: http://loopinfinito.com.br/2012/05/07/ganhando-visibilidade-com-schema-org
+    from: loopinfinito
+  - title: Schema.org
+    url: http://schema.org
+  - title: Getting started
+    url: http://schema.org/docs/gs.html
+    from: schema.org
+  - title: "Google Developers Testing Tool"
+    url: https://developers.google.com/structured-data/testing-tool/
+    from: googledevelopers
 
 ---
 
@@ -53,7 +66,7 @@ Na home do site existe a listagem de posts, e o HTML era mais ou menos assim:
 Nesse código temos o ***main*** que contêm todos os posts listados. Dentro de
 cada post temos título (com url), o resumo do post e algumas informações extras
 e esse é o segredo do Schema, você precisa identificar os blocos da sua aplicação
-e adicionar os atributos certos nos elementos certos para que os motores de buscar
+e adicionar os atributos certos nos elementos certos para que os motores de buscas
 possam indexar seu conteúdo com mais semântica e qualidade.
 
 Um exemplo para melhor entendimento:

@@ -66,6 +66,48 @@ layout: compress
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{ page.title }}",
+        "url": "{{ site.url }}{{ page.url }}",
+        "keywords": "{% for keyword in page.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}",
+        "image": "{{ site.url }}/assets/images/{{ page.img }}",
+        "thumbnailUrl": "{{ site.url }}/assets/images/{{ page.img }}",
+        "datePublished": "{{ page.date }}",
+        "description": "{{ page.description }}",
+        "publisher": "{{ site.name }}",
+        "interactionCount": "{{ site.url }}{{ page.url }}#disqus_thread",
+        "author": {
+            "@type": "Person",
+            "name": "{{ site.name }}",
+            "image": "{{ site.url }}{{ site.picture }}",
+            "url": "{{ site.url }}/sobre/",
+            "sameAs": null,
+            "description": null
+        },
+        "mentions": [
+            {% for rel in page.related %}
+                {% if forloop.last == false %}
+                    {
+                        "@type": "Thing",
+                        "name": "{{ rel.title }}",
+                        "url": "{{ rel.url }}"
+                    },
+                {% else %}
+                    {
+                        "@type": "Thing",
+                        "name": "{{ rel.title }}",
+                        "url": "{{ rel.url }}"
+                    }
+                {% endif %}
+            {% endfor %}
+        ]
+    }
+    </script>
+
     {% if page.keywords %}
     <meta name="keywords" content="{% for keyword in page.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}" />
     {% else %}
@@ -83,14 +125,6 @@ layout: compress
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
-
-    <!-- schema.org ~ author do site -->
-    <div class="hidden" itemscope itemtype="http://schema.org/Person">
-        <img itemprop="image" src="{{ site.url }}{{ site.picture }}" alt="{{ site.name }}">
-        <span itemprop="name">{{ site.name }}</span>
-        <span itemprop="jobTitle">{{ site.job_title }}</span>
-        <span itemprop="email">{{ site.email }}</span>
-    </div>
 
     {{ content }}
 
