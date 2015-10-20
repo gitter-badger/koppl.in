@@ -79,3 +79,12 @@ keywords:
 - programação
 - code
 - coding
+
+# compress configs
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: true
+  ignore:
+    envs: []
