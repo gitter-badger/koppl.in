@@ -171,6 +171,13 @@ layout: compress
             "email": "mailto:{{ site.email }}"
         }
     }
+    {% else %}
+    {
+        "@context": "http://schema.org",
+        "@type": "Blog",
+        "url": "{{ site.url }}",
+        "description": "{{ site.bio }}"
+    }
     {% endif %}
     </script>
 
