@@ -40,17 +40,20 @@ permalink: /:title/
 
 # sociais
 twitter: 'koppl1n'
+email: sergiokopplin@gmail.com
+facebook: sergiokopplin
 
 # compilando e minificando o sass
 sass:
   style: compressed
 
+# markdown
+markdown: kramdown
+highlighter: pygments
+
 # dependências de gems
 gems:
   - jemoji
-
-# social
-email: sergiokopplin@gmail.com
 
 # keywords pra páginas estáticas
 keywords:
@@ -75,3 +78,12 @@ keywords:
 - programação
 - code
 - coding
+
+# compress configs
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+  ignore:
+    envs: []

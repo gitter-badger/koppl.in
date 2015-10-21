@@ -11,17 +11,12 @@ post_class: post-template
 </header>
 
 <main class="content" role="main">
-    <article class="post" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <article class="post" role="article">
         <header class="post-header">
-            <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
-
-            <span class="hidden" itemprop="publisher">koppl.in</span>
-            <span class="hidden" itemprop="interactionCount">{{ site.url }}{{ page.url }}#disqus_thread</span>
-            <img src="{{ site.url }}/assets/images/{{ page.img }}" alt="{{ page.title }} - Imagem" class="hidden" itemprop="image">
+            <h1 class="post-title">{{ page.title }}</h1>
 
             <section class="post-meta">
-                <span class="hidden" itemprop="keywords">{% for keyword in page.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}</span>
-                <time class="page-date" datetime="{{ page.date | date:"%d-%m-%Y" }}" itemprop="datePublished" content="{{ page.date | date:"%m-%d-%Y" }}">
+                <time class="page-date" datetime="{{ page.date | date:"%d-%m-%Y" }}">
                     {{ page.date | date_to_string }}
                 </time>
                 {% if page.categories.size > 0 %}
@@ -45,19 +40,19 @@ post_class: post-template
             </section>
         </header>
 
-        <section class="post-content" itemprop="articleBody">
+        <section class="post-content">
             {{content}}
         </section>
 
         <footer class="post-footer">
-                <figure class="author-image">
-                    <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.picture }})">
-                    <span class="hidden">{{ site.name }} Foto</span></a>
-                </figure>
-                <section class="author">
-                    <h4 itemprop="author">{{ site.name }}</h4>
-                    <p>{{ site.bio }}</p>
-                </section>
+            <figure class="author-image">
+                <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.picture }})"></a>
+            </figure>
+
+            <section class="author">
+                <h4>{{ site.name }}</h4>
+                <p>{{ site.bio }}</p>
+            </section>
 
             {% include share.html %}
             {% include disqus.html %}

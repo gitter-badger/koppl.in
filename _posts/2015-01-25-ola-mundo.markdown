@@ -17,8 +17,6 @@ img: ola-mundo/yellow.jpg
 ---
 Um novo blog acaba de surgir, nesse caso é o meu blog. Acredito que por ser meio perfeccionista, ele tenha demorado quase 1 ano pra ser terminado. Mas agora que consegui chegar num consenso entre meu lado front-end e meu lado back-end, acredito que posso seguir em frente.
 
-<!--more-->
-
 ![Yellow](/assets/images/ola-mundo/yellow.jpg)
 
 <p class="img-legenda">fonte: google images</p>
