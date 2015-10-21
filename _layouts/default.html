@@ -158,44 +158,18 @@ layout: compress
             {% endfor %}
         ]
     }
-    {% else %}
+    {% elsif page.title == 'Sobre mim' %}
     {
         "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "{{ page.title }}",
+        "@type": "Organization",
         "url": "{{ site.url }}{{ page.url }}",
-        "keywords": "{% for keyword in page.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}",
-        "image": "{{ site.url }}/assets/images/{{ page.img }}",
-        "thumbnailUrl": "{{ site.url }}/assets/images/{{ page.img }}",
-        "datePublished": "{{ page.date }}",
-        "description": "{{ page.description }}",
-        "publisher": "{{ site.name }}",
-        "interactionCount": "{{ site.url }}{{ page.url }}#disqus_thread",
-        "author": {
+        "description": "{{ site.bio }}",
+        "founder": {
             "@type": "Person",
             "name": "{{ site.name }}",
-            "image": "{{ site.url }}{{ site.picture }}",
-            "url": "{{ site.url }}/sobre/",
-            "sameAs": null,
-            "description": null
-        },
-        "mentions": [
-            {% for rel in page.related %}
-                {% if forloop.last == false %}
-                    {
-                        "@type": "Thing",
-                        "name": "{{ rel.title }}",
-                        "url": "{{ rel.url }}"
-                    },
-                {% else %}
-                    {
-                        "@type": "Thing",
-                        "name": "{{ rel.title }}",
-                        "url": "{{ rel.url }}"
-                    }
-                {% endif %}
-            {% endfor %}
-        ]
+            "url": "http://facebook.com/{{ site.facebook }}",
+            "email": "mailto:{{ site.email }}"
+        }
     }
     {% endif %}
     </script>

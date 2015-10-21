@@ -30,11 +30,9 @@ related:
 
 ---
 
-Tinha uma tarefa no meu **backlog** para isso. Passei a olhar algumas referências
-e cá estou depois de ter refeito essa parte desse site.
-
-Confesso que não achei complicado e nem difícil de implementar, até porquê o
-material existente sobre isso é amplo e os testes são feitos com muita simplicidade.
+SEO é um termo muito utilizado quando tratamos de desenvolvimento WEB, e uma das técnicas que
+podem nos ajudar nesse processo é a de identificar corretamente o conteúdo de nosso site
+através do Schema.org.
 
 Dentro do [Schema.org][s] você encontra todas as tags necessários e sua documentação,
 e depois de aplicá-las você pode testar na ferramenta do Google dedicada para isso,
@@ -150,7 +148,35 @@ Note que o Google evidenciou uma tag que faltou, você pode agora adicioná-la n
 <img src="url-da-imagem.jpg" alt="Imagem de exemplo" itemprop="image" />
 {% endhighlight %}
 
-É isso pessoal, até a próxima.
+Essa foi a implementação dentro das tags, mas você também pode implementar a mesma técnica através de um dado em formato JSON.
+Para isso precisamos adicionar uma tag no head da página e adicionar as tags, como no exemplo a seguir:
+
+{% highlight javascript %}
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "keywords": "{% for keyword in page.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}",
+    "image": "{{ site.url }}/assets/images/{{ page.img }}",
+    "thumbnailUrl": "{{ site.url }}/assets/images/{{ page.img }}",
+    "datePublished": "{{ page.date }}",
+    "description": "{{ page.description }}",
+    "publisher": "{{ site.name }}",
+    "interactionCount": "{{ site.url }}{{ page.url }}#disqus_thread",
+    "author": {
+        "@type": "Person",
+        "name": "{{ site.name }}",
+        "image": "{{ site.url }}{{ site.picture }}",
+        "url": "{{ site.url }}/sobre/"
+    }
+}
+</script>
+{% endhighlight %}
+
+Acabei por implementar essa última versão nesse site pois achei que centralizaria esse tipo de código em um único lugar.
+Você pode checar o resultado final [aqui][resultado].
 
 #### Referências:
 - [Loop Infinito][l]
@@ -167,3 +193,4 @@ Note que o Google evidenciou uma tag que faltou, você pode agora adicioná-la n
 [img-2-source]: /assets/images/schema/receitas.png
 [img-3]: https://developers.google.com/structured-data/testing-tool/
 [img-3-source]: /assets/images/schema/google-test.png
+[resultado]: https://github.com/sergiokopplin/kopplin-website/blob/gh-pages/_layouts/default.html
