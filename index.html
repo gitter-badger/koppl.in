@@ -22,21 +22,18 @@ cover: /assets/images/wardrobe.jpg
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
-<main id="content" class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+<main id="content" class="content" role="main">
     <div class="extra-pagination inner">
         {% include pagination.html %}
     </div>
 
     {% for post in paginator.posts %}
-        <article class="post" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-            <span class="hidden" itemprop="publisher">koppl.in</span>
-            <img src="{{ site.url }}/assets/images/{{ post.img }}" alt="{{ post.title }} - Imagem" class="hidden" itemprop="image">
-
+        <article class="post" role="article">
             <header class="post-header">
-                <h2 class="post-title" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+                <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             </header>
 
-            <section class="post-excerpt" itemprop="description">
+            <section class="post-excerpt">
                 {{ post.description }}
             </section>
 
@@ -51,8 +48,7 @@ cover: /assets/images/wardrobe.jpg
                         {{ category }}
                     {% endif %}{% endfor %}
                 {% endif %}
-                <span class="hidden" itemprop="keywords">{% for keyword in post.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}</span>
-                <time class="post-date" datetime="{{ post.date | date:"%d-%m-%Y" }}" itemprop="datePublished" content="{{ post.date | date:"%m-%d-%Y" }}">
+                <time class="post-date" datetime="{{ post.date | date:"%d-%m-%Y" }}">
                     {{ post.date | date_to_string }}
                 </time>
             </footer>

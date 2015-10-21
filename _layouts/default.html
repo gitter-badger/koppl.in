@@ -68,6 +68,7 @@ layout: compress
 
     <!-- Schema -->
     <script type="application/ld+json">
+    {% if page.categories %}
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -106,6 +107,97 @@ layout: compress
             {% endfor %}
         ]
     }
+    {% elsif page.title == 'Home' %}
+    {
+        "@context": "http://schema.org",
+        "@type": "Blog",
+        "blogPost":
+        [
+            {% for post in paginator.posts %}
+                {% if forloop.last == false %}
+                    {
+                        "headline": "{{ post.title }}",
+                        "url": "{{ site.url }}{{ post.url }}",
+                        "keywords": "{% for keyword in post.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}",
+                        "image": "{{ site.url }}/assets/images/{{ post.img }}",
+                        "thumbnailUrl": "{{ site.url }}/assets/images/{{ post.img }}",
+                        "datePublished": "{{ post.date }}",
+                        "description": "{{ post.description }}",
+                        "publisher": "{{ site.name }}",
+                        "interactionCount": "{{ site.url }}{{ post.url }}#disqus_thread",
+                        "author": {
+                            "@type": "Person",
+                            "name": "{{ site.name }}",
+                            "image": "{{ site.url }}{{ site.picture }}",
+                            "url": "{{ site.url }}/sobre/",
+                            "sameAs": null,
+                            "description": null
+                        }
+                    },
+                {% else %}
+                    {
+                        "headline": "{{ post.title }}",
+                        "url": "{{ site.url }}{{ post.url }}",
+                        "keywords": "{% for keyword in post.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}",
+                        "image": "{{ site.url }}/assets/images/{{ post.img }}",
+                        "thumbnailUrl": "{{ site.url }}/assets/images/{{ post.img }}",
+                        "datePublished": "{{ post.date }}",
+                        "description": "{{ post.description }}",
+                        "publisher": "{{ site.name }}",
+                        "interactionCount": "{{ site.url }}{{ post.url }}#disqus_thread",
+                        "author": {
+                            "@type": "Person",
+                            "name": "{{ site.name }}",
+                            "image": "{{ site.url }}{{ site.picture }}",
+                            "url": "{{ site.url }}/sobre/",
+                            "sameAs": null,
+                            "description": null
+                        }
+                    }
+                {% endif %}
+            {% endfor %}
+        ]
+    }
+    {% else %}
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{ page.title }}",
+        "url": "{{ site.url }}{{ page.url }}",
+        "keywords": "{% for keyword in page.keywords %}{% if forloop.last == false %}{{ keyword }},{% else %}{{ keyword }}{% endif %}{% endfor %}",
+        "image": "{{ site.url }}/assets/images/{{ page.img }}",
+        "thumbnailUrl": "{{ site.url }}/assets/images/{{ page.img }}",
+        "datePublished": "{{ page.date }}",
+        "description": "{{ page.description }}",
+        "publisher": "{{ site.name }}",
+        "interactionCount": "{{ site.url }}{{ page.url }}#disqus_thread",
+        "author": {
+            "@type": "Person",
+            "name": "{{ site.name }}",
+            "image": "{{ site.url }}{{ site.picture }}",
+            "url": "{{ site.url }}/sobre/",
+            "sameAs": null,
+            "description": null
+        },
+        "mentions": [
+            {% for rel in page.related %}
+                {% if forloop.last == false %}
+                    {
+                        "@type": "Thing",
+                        "name": "{{ rel.title }}",
+                        "url": "{{ rel.url }}"
+                    },
+                {% else %}
+                    {
+                        "@type": "Thing",
+                        "name": "{{ rel.title }}",
+                        "url": "{{ rel.url }}"
+                    }
+                {% endif %}
+            {% endfor %}
+        ]
+    }
+    {% endif %}
     </script>
 
     {% if page.keywords %}
