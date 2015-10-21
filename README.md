@@ -1,5 +1,4 @@
 # Sérgio A. Kopplin ~ [koppl.in][sitelink]
-[![twitter]][Twitter]
 [![travis]][Travis]
 
 Website pessoal onde eu falo da vida e da tecnologia.
