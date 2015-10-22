@@ -659,6 +659,27 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 /* The details of your blog. Defined in ghost/settings/ */
+.main-title {
+    font-size: 13rem;
+    font-weight: 700;
+    font-family: 'Roboto';
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+    display: inline-block;
+    line-height: 1;
+    border: 10px solid #fff;
+    padding: 5px 24px 5px 22px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1);
+}
+
+.bar {
+    display: block;
+    width: .002rem;
+    height: 153px;
+    background: rgba(255, 255, 255, .2);
+    margin: 0 auto 30px;
+}
+
 .page-title {
     margin: 10px 0 10px 0;
     font-size: 5rem;

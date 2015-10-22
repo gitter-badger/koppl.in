@@ -4,8 +4,10 @@
 }
 
 $fontSans: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-$fontSerif: Georgia, Cambria, "Times New Roman", Times, serif; 
+$fontSerif: Georgia, Cambria, "Times New Roman", Times, serif;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "syntax";
 @import "screen";
+
+$preto: #41413f;
