@@ -4,26 +4,21 @@ title: Home
 cover: /assets/images/wardrobe.jpg
 ---
 
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav overlay clearfix">
-        <!-- <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Inscreva-se</a> -->
-    </nav>
-
+<header class="main-header">
     <div class="vertical">
-        <div class="main-header-content inner">
-            <div class="bar"></div>
-            <h1 class="main-title">K</h1>
+        <div class="main-header-content">
+            <a href="/sobre"><h1 class="main-title">Kopplin</h1></a>
             <h2 class="page-description">
                 {{ site.title }}.
-                <a href='{{ site.baseurl }}sobre' class="page-about"> Sobre mim </a>
             </h2>
-            <div class="bar"></div>
-
-            <!-- <h1 class="page-title">K</h1> -->
+            <div class="main-links">
+                <a href="/sobre" class="main-anchors">sobre</a>
+                <a href="#content" class="blog-down main-anchors">blog</a>
+            </div>
         </div>
     </div>
 
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+    <!-- <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a> -->
 </header>
 
 <main id="content" class="content" role="main">

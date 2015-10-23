@@ -58,6 +58,7 @@
         $(window).smartresize(casperFullImg);
 
         $(".scroll-down").arctic_scroll();
+        $(".blog-down").arctic_scroll();
 
     });
 
@@ -93,6 +94,17 @@
                 $htmlBody.stop(true, false).animate({scrollTop: ($(this.hash).offset().top) }, allOptions.speed);
             }
         });
-
     };
+
+    var triangle = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight,
+        x_colors: ['#2e2b2e', '#000', '#182733']
+    });
+
+    $('.main-header').attr('style', 'background-image: url(' + triangle.png() + ')');
+
+    $( ".main-title" ).delay(1000, function(){
+        $(this).css('visibility', 'visible');
+    });
 })(jQuery, 'smartresize');
