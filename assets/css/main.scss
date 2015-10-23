@@ -1,13 +1,16 @@
-/* We need to add display:inline in order to align the '>>' of the 'read more' link */
-.post-excerpt p {
-	display:inline;
-}
-
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
 $fontSans: "Roboto", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 $fontSerif: Georgia, Cambria, "Times New Roman", Times, serif;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "syntax";
 @import "screen";
+@import "syntax";
+
+/* We need to add display:inline in order to align the '>>' of the 'read more' link */
+.post-excerpt p {
+	display:inline;
+}
 
 $preto: #41413f;
