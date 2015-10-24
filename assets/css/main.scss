@@ -5,6 +5,7 @@ $fontSans: "Roboto", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Gene
 $fontSerif: Georgia, Cambria, "Times New Roman", Times, serif;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
+@import "animate";
 @import "screen";
 @import "syntax";
 
