@@ -2,40 +2,42 @@
    5. Single Post - When you click on an individual post
    ========================================================================== */
 
-.post-template .post-header {
-   margin-bottom: 3.4rem;
-}
+.post-template {
+    .post-header {
+       margin-bottom: 3.4rem;
+    }
 
-.post-template .post-title {
-    margin-bottom: 0;
-}
+    .post-title {
+        margin-bottom: 0;
+    }
 
-.post-template .post-meta {
-    margin: 0;
-}
+    .post-meta {
+        margin: 0;
+    }
 
-.post-template .post-date {
-    padding: 0;
-    margin: 0;
-    border: none;
-}
+    .post-date {
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
 
-/* Stop .full-img from creating horizontal scroll - slight hack due to
-   imperfections with browser width % calculations and rounding */
-.post-template .content {
-    overflow: hidden;
-}
+    /* Stop .full-img from creating horizontal scroll - slight hack due to
+       imperfections with browser width % calculations and rounding */
+    .content {
+        overflow: hidden;
+    }
 
-/* Tweak the .post wrapper style */
-.post-template .post {
-    margin-top: 0;
-    border-bottom: none;
-    padding-bottom: 0;
-}
+    /* Tweak the .post wrapper style */
+    .post {
+        margin-top: 0;
+        border-bottom: none;
+        padding-bottom: 0;
 
-/* Kill that stylish little circle that was on the border, too */
-.post-template .post:after {
-    display: none;
+        /* Kill that stylish little circle that was on the border, too */
+        &:after {
+            display: none;
+        }
+    }
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -46,23 +48,23 @@
     word-break: break-word;
     hyphens: auto;
     clear: both;
-}
 
-.post-list a {
-    text-decoration: none;
-    transition: .1s all ease-in-out;
-    padding: 10px 0;
-    display: block;
-    border-bottom: 1px solid #eee;
-}
+     a {
+        text-decoration: none;
+        transition: .1s all ease-in-out;
+        padding: 10px 0;
+        display: block;
+        border-bottom: 1px solid #eee;
 
-.post-list a:hover {
-    color: orange;
-    border-bottom: 1px solid #ded6d6;
-}
+        &:hover {
+            color: orange;
+            border-bottom: 1px solid #ded6d6;
+        }
 
-.post-list a span {
-    color: #4A4A4A;
+        & span {
+            color: #4A4A4A;
+        }
+    }
 }
 
 .post-archives .page-title,
@@ -105,17 +107,54 @@
     margin: 6rem 0 0 0;
     padding: 6rem 0 0 0;
     border-top: #EBF2F6 1px solid;
-}
 
-.post-footer h4 {
-    font-size: 1.8rem;
-    margin: 0;
-}
+    h4 {
+        font-size: 1.8rem;
+        margin: 0;
+    }
 
-.post-footer p {
-    margin: 1rem 0;
-    font-size: 1.4rem;
-    line-height: 1.75em;
+    p {
+        margin: 1rem 0;
+        font-size: 1.4rem;
+        line-height: 1.75em;
+    }
+
+    /* Create some space to the right for the share links */
+    .author {
+        margin-right: 180px;
+    }
+
+    h4 a {
+        color: #2e2e2e;
+        text-decoration: none;
+    }
+
+    h4 a:hover {
+        text-decoration: underline;
+    }
+
+    /* Drop the share links in the space to the right.
+       Doing it like this means it's easier for the author bio
+       to be flexible at smaller screen sizes while the share
+       links remain at a fixed width the whole time */
+    .share {
+        position: absolute;
+        top: 6rem;
+        right: 0;
+        width: 140px;
+    }
+
+    .share a {
+        font-size: 1.8rem;
+        display: inline-block;
+        margin: 1rem 1.6rem 1.6rem 0;
+        color: #BBC7CC;
+        text-decoration: none;
+    }
+
+    .share a:hover {
+        color: #50585D;
+    }
 }
 
 /* list of author links - location / url */
@@ -127,50 +166,13 @@
     line-height: 1;
     font-style: italic;
     color: #9EABB3;
-}
 
-.author-meta a {
-    color: #9EABB3;
-}
-.author-meta a:hover {
-    color: #111;
-}
-
-/* Create some space to the right for the share links */
-.post-footer .author {
-    margin-right: 180px;
-}
-
-.post-footer h4 a {
-    color: #2e2e2e;
-    text-decoration: none;
-}
-
-.post-footer h4 a:hover {
-    text-decoration: underline;
-}
-
-/* Drop the share links in the space to the right.
-   Doing it like this means it's easier for the author bio
-   to be flexible at smaller screen sizes while the share
-   links remain at a fixed width the whole time */
-.post-footer .share {
-    position: absolute;
-    top: 6rem;
-    right: 0;
-    width: 140px;
-}
-
-.post-footer .share a {
-    font-size: 1.8rem;
-    display: inline-block;
-    margin: 1rem 1.6rem 1.6rem 0;
-    color: #BBC7CC;
-    text-decoration: none;
-}
-
-.post-footer .share a:hover {
-    color: #50585D;
+    a {
+        color: #9EABB3;
+    }
+    a:hover {
+        color: #111;
+    }
 }
 
 /* The subscribe icon on the footer */
@@ -187,27 +189,33 @@
     border-radius: 50px;
     background: #FFF;
     transition: box-shadow 0.5s;
-}
 
-/* The RSS icon, inserted via icon font */
-.subscribe:before {
-    color: #D2DEE3;
-    font-size: 10px;
-    position: absolute;
-    top: 2px;
-    left: 9px;
-    font-weight: 700;
-    transition: color 0.5s ease;
-}
+    /* The RSS icon, inserted via icon font */
+    &:before {
+        color: #D2DEE3;
+        font-size: 10px;
+        position: absolute;
+        top: 2px;
+        left: 9px;
+        font-weight: 700;
+        transition: color 0.5s ease;
+    }
 
-/* Add a box shadow to on hover */
-.subscribe:hover {
-    box-shadow: rgba(0,0,0,0.05) 0 0 0 3px;
-    transition: box-shadow 0.25s;
-}
+    /* Add a box shadow to on hover */
+    &:hover {
+        box-shadow: rgba(0,0,0,0.05) 0 0 0 3px;
+        transition: box-shadow 0.25s;
+    }
 
-.subscribe:hover:before {
-    color: #50585D;
+    &:hover:before {
+        color: #50585D;
+    }
+
+    /* On hover, show the tooltip! */
+    &:hover .tooltip {
+        opacity: 1;
+        top: -33px;
+    }
 }
 
 /* CSS tooltip saying "Subscribe!" - initially hidden */
@@ -227,25 +235,19 @@
     border-radius: 20px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     transition: opacity 0.3s ease, top 0.3s ease;
-}
 
-/* The little chiclet arrow under the tooltip, pointing down */
-.tooltip:after {
-    content: " ";
-    border-width: 5px 5px 0 5px;
-    border-style: solid;
-    border-color: #50585D transparent;
-    display: block;
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    margin-left: -5px;
-    z-index: 220;
-    width: 0;
-}
-
-/* On hover, show the tooltip! */
-.subscribe:hover .tooltip {
-    opacity: 1;
-    top: -33px;
+    /* The little chiclet arrow under the tooltip, pointing down */
+    &:after {
+        content: " ";
+        border-width: 5px 5px 0 5px;
+        border-style: solid;
+        border-color: #50585D transparent;
+        display: block;
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        margin-left: -5px;
+        z-index: 220;
+        width: 0;
+    }
 }

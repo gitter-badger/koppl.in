@@ -9,10 +9,6 @@
         height: 40%;
     }
 
-    .no-cover.main-header {
-        height: 30%;
-    }
-
     .archive-template .main-header {
         max-height: 20%;
         min-height: 160px;
@@ -54,25 +50,6 @@
 
     .subscribe-button {
         padding: 0 12px;
-    }
-
-    .main-nav.overlay a:hover {
-        color: #fff;
-        border-color: transparent;
-        background: transparent;
-    }
-
-    .no-cover .main-nav.overlay {
-        background: none;
-    }
-    .no-cover .main-nav.overlay .back-button,
-    .no-cover .main-nav.overlay .subscribe-button {
-        border: none;
-    }
-
-    .main-nav.overlay .back-button,
-    .main-nav.overlay .subscribe-button {
-        border-color: transparent;
     }
 
     .blog-logo img {

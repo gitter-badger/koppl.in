@@ -1,17 +1,10 @@
 /* ==========================================================================
    6. Author profile
    ========================================================================== */
-   
+
 .post-head.main-header {
     height: 65%;
     min-height: 180px;
-}
-
-.no-cover.post-head.main-header {
-    height: 85px;
-    min-height: 0;
-    margin-bottom: 0;
-    background: transparent;
 }
 
 .tag-head.main-header {
@@ -22,12 +15,6 @@
 .author-head.main-header {
     height: 40%;
     min-height: 180px;
-}
-
-.no-cover.author-head.main-header {
-    height: 10%;
-    min-height: 100px;
-    background: transparent;
 }
 
 .author-profile {
