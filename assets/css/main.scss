@@ -14,7 +14,9 @@ $fontMonospace: "Monaco", "Consolas", "Inconsolata", monospace, sans-serif;
 @import "03-utilities";
 
 // ~ App Css
-@import "04-theme";
+@import "04-theme-home";
+@import "04-theme-page";
+@import "04-theme-post";
 @import "05-post";
 @import "06-author";
 @import "07-third-part";

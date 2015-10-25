@@ -5,38 +5,32 @@ title: Home
 
 <header class="main-header">
     <div class="vertical">
-        <a href="/sobre"><h1 class="main-title">Kopplin</h1></a>
+        <a href="/sobre"><h1 class="main-header__title">Kopplin</h1></a>
 
-        <h2 class="page-description">
+        <h2 class="main-header__description">
             um <a href="http://youtube.com/sergiokopplin" target="_blank">baterista</a> <a href="https://github.com/sergiokopplin" target="_blank">programador</a> de <a href="https://www.facebook.com/ipibarueri?fref=ts" target="_blank">nárnia</a>
         </h2>
     </div>
 
-    <a class="scroll-down icon-arrow-left" href="#content">
-        <span class="hidden">Scroll Down</span>
-    </a>
+    <a class="main-header__scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
 </header>
 
 <main id="content" class="content" role="main">
-    <div class="extra-pagination inner">
-        {% include pagination.html %}
-    </div>
-
     {% for post in paginator.posts %}
         <article class="post" role="article">
             <header class="post-header">
                 <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             </header>
 
-            <section class="post-excerpt">
+            <!-- <section class="post-excerpt">
                 {{ post.description }}
-            </section>
+            </section> -->
 
             <footer class="post-meta">
-                <img class="author-thumb" src="{{ site.picture }}" alt="Foto do autor" nopin="nopin" />
-                <span itemprop="author">{{ site.name }}</span>
+                <!-- <img class="author-thumb" src="{{ site.picture }}" alt="Foto do autor" nopin="nopin" /> -->
+                <!-- <span itemprop="author">{{ site.name }}</span> -->
                 {% if post.categories.size > 0 %}
-                    em
+                    <!-- em -->
                     {% for category in post.categories %}{% if forloop.last == false %}
                         {{ category }} e
                     {% else %}
