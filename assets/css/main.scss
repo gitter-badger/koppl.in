@@ -7,6 +7,17 @@ $fontSans: "Montserrat", Verdana, sans-serif;
 $fontSerif: "Cardo", Georgia, serif;
 $fontMonospace: "Monaco", "Consolas", "Inconsolata", monospace, sans-serif;
 
+// ~ Colors
+//  . primary
+    $alpha: #424242;
+
+//  . secondary
+    $beta: #222;
+    $gama: #edf0f1;
+    $delta: '';
+
+// ! Imports
+
 // ~ Base
 @import "00-normalize";
 @import "01-icons";
