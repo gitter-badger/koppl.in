@@ -1,3 +1,7 @@
+/* ==========================================================================
+   1. Icons - Sets up the icon font and respective classes
+   ========================================================================== */
+
 @font-face {
 	font-family: 'icomoon';
 	src:url('/assets/fonts/icomoon.eot?q8arkz');
@@ -10,7 +14,7 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
+	font-family: 'icomoon' !important;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -23,13 +27,13 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-rss:before {
+.icon-feed:before {
 	content: "\f601";
 }
 .icon-twitter:before {
 	content: "\f602";
 }
-.icon-google:before {
+.icon-google-plus:before {
 	content: "\f603";
 }
 .icon-facebook:before {

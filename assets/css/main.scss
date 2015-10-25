@@ -5,19 +5,24 @@
 // ~ Fonts
 $fontSans: "Montserrat", Verdana, sans-serif;
 $fontSerif: "Cardo", Georgia, serif;
-$fontMonospace: "";
+$fontMonospace: "Inconsolata", monospace, sans-serif;
 
 // ~ Base
-@import "normalize";
-@import "icons";
+@import "00-normalize";
+@import "01-icons";
+@import "02-general";
+@import "03-utilities";
 
 // ~ App Css
-@import "screen";
+@import "04-theme";
+@import "05-post";
+@import "06-author";
+@import "07-third-part";
+@import "08-pagination";
+@import "09-footer";
+@import "10-media-queries-500";
+@import "11-media-queries-900";
 
 // ~ Others
-@import "animate";
-@import "syntax";
-
-/* We need to add display:inline in order to align the '>>' of the 'read more' link */
-
-$preto: #41413f;
+@import "12-animate";
+@import "13-syntax";
