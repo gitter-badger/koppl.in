@@ -11,7 +11,7 @@
     .inner {
         position: relative;
         width: 80%;
-        max-width: 120px;
+        max-width: 200px;
         margin: 5rem auto;
     }
 
@@ -28,6 +28,11 @@
         text-decoration: none;
         transition: all ease-in-out 0.3s;
         font-size: 30px;
+        border: 1px solid $gama;
+        padding: 0px;
+        line-height: 1;
+        height: 33px;
+        width: 35px;
 
         &:hover {
             color: $alpha;
