@@ -42,6 +42,7 @@ permalink: /:title/
 twitter: 'koppl1n'
 email: sergiokopplin@gmail.com
 facebook: sergiokopplin
+github: https://github.com/sergiokopplin/kopplin-website
 
 # compilando e minificando o sass
 sass:

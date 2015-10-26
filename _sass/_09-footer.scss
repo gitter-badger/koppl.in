@@ -1,37 +1,32 @@
 /* ==========================================================================
    9. Footer - The bottom of every page
    ========================================================================== */
-   
+
 .site-footer {
     position: relative;
-    margin: 8rem 0 0 0;
-    padding: 0.5rem 15px;
-    border-top: #EBF2F6 1px solid;
-    font-family: $fontSans;
+    margin: 10rem 0 5rem;
+    font-family: $fontExtra;
     font-size: 1rem;
-    line-height: 1.75em;
-    color: #BBC7CC;
-}
+    color: $delta;
+    text-align: center;
 
-.site-footer a {
-    color: #BBC7CC;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .inner {
+        position: relative;
+        width: 80%;
+        max-width: 300px;
+    }
 
-.site-footer a:hover {
-    color: #50585D;
-}
+    a {
+        color: $delta;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-.poweredby {
-    display: block;
-    width: 45%;
-    float: right;
-    text-align: right;
-}
+    a:hover {
+        color: $alpha;
+    }
 
-.copyright {
-    display: block;
-    width: 45%;
-    float: left;
+    .site-footer__copyright {
+        display: block;
+    }
 }
