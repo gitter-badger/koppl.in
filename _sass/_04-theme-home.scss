@@ -71,29 +71,13 @@
         }
     }
 
-    /* Every post, on every page, gets this style on its <article> tag */
     .post {
         position: relative;
         width: 80%;
         max-width: 610px;
         margin: 8rem auto;
-        // border-bottom: $gama 1px solid;
         word-break: break-word;
         hyphens: auto;
-
-        // &:after {
-        //     display: block;
-        //     content: "";
-        //     width: 7px;
-        //     height: 7px;
-        //     border: $gama 1px solid;
-        //     position: absolute;
-        //     bottom: -5px;
-        //     left: 50%;
-        //     margin-left: -5px;
-        //     background: #FFF;
-        //     box-shadow: #FFF 0 0 10px 10px;
-        // }
 
         .post-title {
             font-family: $fontSerif;
@@ -132,7 +116,22 @@
         hr {
             width: 20%;
             margin: 8rem auto;
-            display: block
+            display: block;
+            position: relative;
+
+            &:after {
+                display: block;
+                content: "";
+                width: 7px;
+                height: 7px;
+                border: $gama 1px solid;
+                position: absolute;
+                bottom: -3px;
+                left: 50%;
+                margin-left: -5px;
+                background: #FFF;
+                box-shadow: #FFF 0 0 10px 10px;
+            }
         }
     }
 }
