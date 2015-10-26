@@ -71,7 +71,7 @@
         }
     }
 
-    .post {
+    .main-post {
         position: relative;
         width: 80%;
         max-width: 610px;
@@ -79,7 +79,7 @@
         word-break: break-word;
         hyphens: auto;
 
-        .post-title {
+        .main-post__title {
             font-family: $fontSerif;
             text-align: center;
 
@@ -88,7 +88,7 @@
             }
         }
 
-        .post-meta {
+        .main-post__meta {
             display: block;
             margin: 3rem 0 0;
             font-family: sans-serif;
@@ -102,7 +102,7 @@
                 text-decoration: none;
             }
 
-            .post-date {
+            .main-post__date {
                 display: inline-block;
                 margin-left: 8px;
                 padding-left: 12px;
