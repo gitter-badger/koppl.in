@@ -1,16 +1,41 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-$fontSans: "Roboto", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-$fontSerif: Georgia, Cambria, "Times New Roman", Times, serif;
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import "screen";
-@import "syntax";
+// ~ Fonts
+$fontSans: "Montserrat", Verdana, sans-serif;
+$fontSerif: "Cardo", Georgia, serif;
+$fontMonospace: "Monaco", "Consolas", "Inconsolata", monospace, sans-serif;
 
-/* We need to add display:inline in order to align the '>>' of the 'read more' link */
-.post-excerpt p {
-	display:inline;
-}
+// ~ Colors
+//  . primary
+    $alpha: #424242;
 
-$preto: #41413f;
+//  . secondary
+    $beta: #222;
+    $gama: #edf0f1;
+    $delta: '';
+
+// ! Imports
+
+// ~ Base
+@import "00-normalize";
+@import "01-icons";
+@import "02-general";
+@import "03-utilities";
+
+// ~ App Css
+@import "04-theme-home";
+@import "04-theme-page";
+@import "04-theme-post";
+@import "05-post";
+@import "06-author";
+@import "07-third-part";
+@import "08-pagination";
+@import "09-footer";
+@import "10-media-queries-500";
+@import "11-media-queries-900";
+
+// ~ Others
+@import "12-animate";
+@import "13-syntax";

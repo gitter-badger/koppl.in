@@ -4,7 +4,7 @@ post_class: post-template post-archives
 sobre: true
 ---
 
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+<header class="main-header">
     <nav class="main-nav overlay clearfix">
         <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
         <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Inscreva-se</a>
@@ -27,7 +27,7 @@ sobre: true
                         {% for post in posts %}
                             {% if post.url %}
                                 <a href="{{ post.url }}" itemprop="url"><span itemprop="headline">{{ post.title }}</span><span class="post-list-data" itemprop="datePublished" content="12-12-2012">{{ post.date | date_to_string }}</span></>
-                                <img src="{{ site.url }}/assets/images/{{ post.img }}" alt="{{ post.title }} - Imagem" class="hidden" itemprop="image">        
+                                <img src="{{ site.url }}/assets/images/{{ post.img }}" alt="{{ post.title }} - Imagem" class="hidden" itemprop="image">
                             {% endif %}
                         {% endfor %}
                     {% endfor %}

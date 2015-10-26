@@ -60,9 +60,7 @@
         casperFullImg();
         $(window).smartresize(casperFullImg);
 
-        $(".scroll-down").arctic_scroll();
-        $(".blog-down").arctic_scroll();
-
+        $(".main-header__scroll-down").arctic_scroll();
     });
 
     // smartresize
@@ -133,7 +131,8 @@
 
     $('.main-header').attr('style', 'background-image: url(' + triangle.png() + ')');
 
-    $(".main-title").delay(1000, function() {
-        $(this).css('visibility', 'visible');
+    $(window).load(function () {
+        $(".main-header").children().addClass('animated fadeIn');
     });
+
 })(jQuery, 'smartresize');
