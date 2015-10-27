@@ -132,8 +132,4 @@
 
     $('.main-header').attr('style', 'background-image: url(' + triangle.png() + ')');
 
-    $(window).load(function () {
-        $(".main-header").children().addClass('animated fadeIn');
-    });
-
 })(jQuery, 'smartresize');
