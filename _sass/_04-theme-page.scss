@@ -16,7 +16,10 @@
         }
 
         .page-header__title {
-            font-family: $fontSerif;
+            font-family: $fontSans;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0;
         }
 
         .page-nav {
