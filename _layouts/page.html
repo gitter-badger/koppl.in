@@ -4,18 +4,18 @@ class: page-template
 ---
 
 <header class="page-header">
+    <nav class="page-header__nav">
+        <a class="page-header__back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
+        <a class="page-header__subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Inscreva-se</a>
+    </nav>
+
     <div class="inner">
         <h1 class="page-header__title">{{ page.title }}</h1>
     </div>
-
-    <nav class="page-nav clearfix">
-        <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
-        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Inscreva-se</a>
-    </nav>
 </header>
 
 <main class="content" role="main">
-    <article class="post">
-        <section class="post-content">{{content}}</section>
+    <article class="page">
+        <section class="page-content">{{content}}</section>
     </article>
 </main>
