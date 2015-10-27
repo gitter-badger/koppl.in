@@ -28,7 +28,7 @@ title: Home
                         <a href="#">{{ category }}</a>
                     {% endif %}{% endfor %}
                 {% endif %}
-                <time class="main-post__date" datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date:"%m°%Y" }}</time>
+                <time class="main-post__date" datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b, %Y" }}</time>
             </div>
 
             <hr>
