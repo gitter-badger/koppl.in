@@ -1,16 +1,21 @@
 ---
 layout: default
-post_class: post-template page-template
+class: page-template
 ---
 
-<nav class="main-nav clearfix">
-    <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
-    <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Inscreva-se</a>
-</nav>
+<header class="page-header">
+    <div class="inner">
+        <h1 class="page-header__title">{{ page.title }}</h1>
+    </div>
+
+    <nav class="page-nav clearfix">
+        <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Inscreva-se</a>
+    </nav>
+</header>
 
 <main class="content" role="main">
     <article class="post">
-        <h1 class="post-title">{{ page.title }}</h1>
         <section class="post-content">{{content}}</section>
-  </article>
+    </article>
 </main>
