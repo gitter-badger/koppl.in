@@ -158,7 +158,6 @@ $(document).ready(function() {
 });
 
 // PUSH ESC KEY TO EXIT
-
 $(document).keydown(function(e) {
   if (e.keyCode == 27) {
     $(".mobile-nav").fadeOut(500);
@@ -167,4 +166,14 @@ $(document).keydown(function(e) {
     $(".hamburguer__mid-menu").removeClass("hamburguer__mid-animate");
     $(".hamburguer__bottom-menu").removeClass("hamburguer__bottom-animate");
   }
+});
+
+// Sticky Header
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > 100 && !$("body").hasClass('noscroll')) {
+        $('.hamburguer').fadeOut('fast');
+    } else {
+        $('.hamburguer').fadeIn('fast');
+    }
 });
