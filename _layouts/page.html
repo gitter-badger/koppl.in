@@ -5,8 +5,16 @@ class: page-template
 
 <header class="page-header">
     <nav class="page-header__nav">
-        <a class="page-header__back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
-        <a class="page-header__subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Inscreva-se</a>
+        <div class="mobile-nav">
+            <li><a href="/">HOME</a></li>
+            <li><a href="#">SOBRE</a></li>
+        </div>
+
+        <a href="javascript:void(0)" class="hamburguer">
+            <div class="menui hamburguer__top-menu"></div>
+            <div class="menui hamburguer__mid-menu"></div>
+            <div class="menui hamburguer__bottom-menu"></div>
+        </a>
     </nav>
 
     <div class="inner">

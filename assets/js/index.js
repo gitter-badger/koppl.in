@@ -132,4 +132,39 @@
 
     $('.main-header').attr('style', 'background-image: url(' + triangle.png() + ')');
 
+    // HAMBURGLERv2
+
+
+
 })(jQuery, 'smartresize');
+
+function togglescroll() {
+  $('body').on('touchstart', function(e) {
+    if ($('body').hasClass('noscroll')) {
+      e.preventDefault();
+    }
+  });
+}
+
+$(document).ready(function() {
+  togglescroll()
+  $(".hamburguer").click(function() {
+    $(".mobile-nav").fadeToggle(500);
+    $(".hamburguer__top-menu").toggleClass("hamburguer__top-animate");
+    $("body").toggleClass("noscroll");
+    $(".hamburguer__mid-menu").toggleClass("hamburguer__mid-animate");
+    $(".hamburguer__bottom-menu").toggleClass("hamburguer__bottom-animate");
+  });
+});
+
+// PUSH ESC KEY TO EXIT
+
+$(document).keydown(function(e) {
+  if (e.keyCode == 27) {
+    $(".mobile-nav").fadeOut(500);
+    $(".hamburguer__top-menu").removeClass("hamburguer__top-animate");
+    $("body").removeClass("noscroll");
+    $(".hamburguer__mid-menu").removeClass("hamburguer__mid-animate");
+    $(".hamburguer__bottom-menu").removeClass("hamburguer__bottom-animate");
+  }
+});
