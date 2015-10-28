@@ -1,7 +1,3 @@
-/* ==========================================================================
-   5. Single Post - When you click on an individual post
-   ========================================================================== */
-
 .post-template {
     .post-header {
        margin-bottom: 3.4rem;
@@ -21,26 +17,21 @@
         border: none;
     }
 
-    /* Stop .full-img from creating horizontal scroll - slight hack due to
-       imperfections with browser width % calculations and rounding */
     .content {
         overflow: hidden;
     }
 
-    /* Tweak the .post wrapper style */
     .post {
         margin-top: 0;
         border-bottom: none;
         padding-bottom: 0;
 
-        /* Kill that stylish little circle that was on the border, too */
         &:after {
             display: none;
         }
     }
 }
 
-/* Every post, on every page, gets this style on its <article> tag */
 .post-list {
     position: relative;
     margin: 4rem auto;

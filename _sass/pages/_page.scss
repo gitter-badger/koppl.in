@@ -1,0 +1,21 @@
+.page-template {
+
+    .page {
+        position: relative;
+        width: 80%;
+        max-width: 710px;
+        margin: 4rem auto;
+        padding-bottom: 4rem;
+        word-break: break-word;
+        hyphens: auto;
+
+        .page-content {
+            & p::first-letter {
+                font-family: $fontSans;
+                font-size: 6rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
