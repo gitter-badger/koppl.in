@@ -10,14 +10,14 @@
    z-index: 999;
    display: none;
    position: fixed;
-   width: 100%;
+   width: 250px;
    height: 100%;
-   background: $alpha;
+   background: $beta;
 
    li {
        list-style-type: none;
        text-align: center;
-       padding: 10px;
+    //    padding: 10px;
 
        &:first-child {
            margin-top: 60px;
@@ -25,12 +25,22 @@
    }
 
    li a {
-       font-size: 150%;
-       color: #fff;
-       text-decoration: none;
-       font-weight: 300;
-       width: 100%;
-   }
+        font-size: 150%;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        // width: 100%;
+        border-bottom: 4px solid transparent;
+        transition: all ease-in-out .3s;
+        padding: 0 0 5px;
+        display: block;
+        // box-sizing: border-box;
+        margin: 0 10px;
+
+        &:hover {
+            border-bottom: 4px solid #fff;
+        }
+    }
 }
 
 // hamburguer
