@@ -3,9 +3,7 @@ layout: page
 title: Sobre mim
 permalink: /sobre/index.html
 ---
-Olá,
-
-Meu nome é Sérgio A. Kopplin, nascido no mesmo ano de "[The Silence of the Lambs][imdb]" e formado em Sistemas para Internet. Sou de Barueri/SP.
+Olá. Meu nome é Sérgio A. Kopplin, nascido no mesmo ano de "[The Silence of the Lambs][imdb]" e formado em Sistemas para Internet. Sou de Barueri/SP.
 
 ![Perfil][img]{:style="margin: 0 auto; width: 300px; border-radius: 100%;"}
 

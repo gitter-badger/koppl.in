@@ -3,13 +3,11 @@
    ========================================================================== */
 
 .page-template {
-    
+
     .page-header {
         position: relative;
         padding: 0 0 8rem;
         margin: 0 auto;
-
-
 
         .inner {
             width: 80%;
@@ -18,11 +16,11 @@
         }
 
         .page-header__title {
-            font-family: $fontSans;
+            font-family: $fontSerif;
             text-transform: uppercase;
             font-weight: bold;
             letter-spacing: 0;
-            font-size: 6rem;
+            font-size: 7rem;
             margin-top: 7rem;
         }
 
@@ -43,7 +41,6 @@
             display: inline-block;
             height: 38px;
             padding: 0 15px 0 10px;
-            // border: $alpha 2px solid;
             color: $alpha;
             text-align: center;
             font-size: 12px;
@@ -106,5 +103,14 @@
         padding-bottom: 4rem;
         word-break: break-word;
         hyphens: auto;
+
+        .page-content {
+            & p::first-letter {
+                font-family: $fontSans;
+                font-size: 6rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
     }
 }
