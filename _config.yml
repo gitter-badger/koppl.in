@@ -45,8 +45,8 @@ facebook: sergiokopplin
 github: https://github.com/sergiokopplin/kopplin-website
 
 # compilando e minificando o sass
-sass:
-  style: compressed
+# sass:
+#   style: compressed
 
 # markdown
 markdown: kramdown
