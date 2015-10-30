@@ -9,6 +9,10 @@ url: http://koppl.in
 # utitilizado na meta tag de compartilhamento de redes sociais
 domain_name: 'http://koppl.in/'
 
+# pastas de build
+source: app
+destination: build
+
 # numero de posts por pagina
 paginate: 3
 
@@ -44,17 +48,9 @@ email: sergiokopplin@gmail.com
 facebook: sergiokopplin
 github: https://github.com/sergiokopplin/kopplin-website
 
-# compilando e minificando o sass
-# sass:
-#   style: compressed
-
 # markdown
 markdown: kramdown
 highlighter: pygments
-
-# dependências de gems
-gems:
-  - jemoji
 
 # keywords pra páginas estáticas
 keywords:
