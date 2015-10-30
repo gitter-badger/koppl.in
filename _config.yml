@@ -3,6 +3,10 @@ name: Sérgio Kopplin
 # utilizado em diversas tags <a>
 baseurl: /
 
+# pastas do build
+source: ./app
+destination: ./_site
+
 # url de base para imagens
 url: http://koppl.in
 
@@ -13,7 +17,7 @@ domain_name: 'http://koppl.in/'
 paginate: 3
 
 # removendo do build
-exclude: [README.md, vendor, Gemfile, Gemfile.lock, Rakefile, node_modules, gulpfile.js, package.json, ]
+exclude: [README.md, vendor, Gemfile, Gemfile.lock, Rakefile, node_modules, gulpfile.js, package.json]
 
 # adicionando tag do disqus
 disqus: sergiokopplin
@@ -44,17 +48,9 @@ email: sergiokopplin@gmail.com
 facebook: sergiokopplin
 github: https://github.com/sergiokopplin/kopplin-website
 
-# compilando e minificando o sass
-# sass:
-#   style: compressed
-
 # markdown
 markdown: kramdown
 highlighter: pygments
-
-# dependências de gems
-gems:
-  - jemoji
 
 # keywords pra páginas estáticas
 keywords:
