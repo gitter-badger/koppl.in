@@ -13,11 +13,15 @@ url: http://koppl.in
 # utitilizado na meta tag de compartilhamento de redes sociais
 domain_name: 'http://koppl.in/'
 
+# pastas de build
+source: app
+destination: build
+
 # numero de posts por pagina
 paginate: 3
 
 # removendo do build
-exclude: [README.md, vendor, Gemfile, Gemfile.lock, Rakefile, node_modules, gulpfile.js, package.json]
+exclude: [README.md, vendor, Gemfile, Gemfile.lock, Rakefile, node_modules, gulpfile.js, package.json, build]
 
 # adicionando tag do disqus
 disqus: sergiokopplin

@@ -1,9 +1,7 @@
-var gulp = require('gulp');
-var shell = require('gulp-shell');
-var prefix = require('gulp-autoprefixer');
-var browserSync = require('browser-sync').create();
-
-var sass = require('gulp-ruby-sass'),
+var gulp = require('gulp'),
+    shell = require('gulp-shell'),
+    prefix = require('gulp-autoprefixer'),
+    sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     jshint = require('gulp-jshint'),
@@ -14,16 +12,17 @@ var sass = require('gulp-ruby-sass'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     plumber = require('gulp-plumber'),
+    sourcemaps = require('gulp-sourcemaps'),
     cp = require('child_process');
 
-var sourcemaps = require('gulp-sourcemaps');
+var browserSync = require('browser-sync').create();
 
 // gulp.task('build', shell.task(['bundle exec jekyll build --watch --drafts']));
 gulp.task('build', shell.task(['jekyll build --watch --drafts']));
 
 gulp.task('serve', function () {
     browserSync.init({
-        server: { baseDir: '_site/' },
+        server: { baseDir: 'build/' },
         open: false
     });
 });
@@ -72,7 +71,8 @@ gulp.task('styles', function() {
 //     gulp.start('styles', 'scripts', 'browser-sync', 'watch');
 // });
 
-gulp.task('default', ['styles', 'build', 'serve'], function () {
-    gulp.watch('_site/**/*.*', ['styles']);
+gulp.task('default', ['build', 'serve'], function () {
+// gulp.task('default', ['styles', 'build', 'serve'], function () {
+    // gulp.watch('build/**/*.*', ['styles']);
     // gulp.watch('_site/').on('change', browserSync.reload);
 });
