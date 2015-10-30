@@ -17,7 +17,7 @@ destination: build
 paginate: 3
 
 # removendo do build
-exclude: [README.md, vendor, Gemfile, Gemfile.lock, Rakefile, node_modules, gulpfile.js, package.json, ]
+exclude: [README.md, vendor, Gemfile, Gemfile.lock, Rakefile, node_modules, gulpfile.js, package.json, build]
 
 # adicionando tag do disqus
 disqus: sergiokopplin
