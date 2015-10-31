@@ -1,8 +1,8 @@
 // base
 @import "base/_variables";
-@import "base/_normalize";
+@import "../bower_components/normalize-css/normalize"; // bower
 @import "base/_utilities";
-@import "base/_cssgram";
+@import "../bower_components/cssgram/source/css/cssgram"; // bower
 @import "base/_icons";
 @import "base/_syntax";
 @import "base/_general";

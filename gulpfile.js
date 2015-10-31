@@ -51,7 +51,12 @@ gulp.task('img', function(tmp) {
 });
 
 gulp.task('js', function() {
-    return gulp.src(['_scripts/**/*.js'])
+    return gulp.src([
+            'bower_components/jquery/dist/jquery.js',
+            'bower_components/jquery.fitvids/jquery.fitvids.js',
+            'bower_components/trianglify/dist/trianglify.min.js',
+            '_scripts/index.js'
+        ])
         .pipe(cache('js-cache'))
         .pipe(jshint())
         .pipe(plumber())
@@ -77,8 +82,8 @@ gulp.task('css', function() {
            cascade:  true
         }))
         .on('error', gutil.log)
-        .pipe(concat('main.css'))
         .pipe(sourceMaps.write())
+        .pipe(concat('main.css'))
         .pipe(gulp.dest('build/assets/css'))
         .pipe(minifyCSS())
         .pipe(gulp.dest('assets/css'))

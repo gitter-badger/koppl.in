@@ -14,5 +14,12 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "cssgram": "*",
+    "normalize-css": "~3.0.3",
+    "jquery": "~2.1.4",
+    "jquery.fitvids": "fitvids#~1.1.0",
+    "trianglify": "~0.3.1"
+  }
 }
