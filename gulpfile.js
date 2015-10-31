@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
+    cache = require('gulp-cached'),
     sass = require('gulp-sass'),
     jshint = require('gulp-jshint'),
     sourceMaps = require('gulp-sourcemaps'),
@@ -9,14 +10,11 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     minifyCSS = require('gulp-minify-css'),
     browserSync = require('browser-sync'),
-    shell = require('gulp-shell'),
     plumber = require('gulp-plumber'),
     gutil = require('gulp-util'),
+    sequence = require('run-sequence'),
+    shell = require('gulp-shell'),
     cp = require('child_process');
-
-// gulp.task('build', function() {
-//     shell.task('bundle exec jekyll build --watch --drafts');
-// });
 
 gulp.task('build', function (done) {
     browserSync.notify('Building Jekyll');
@@ -33,12 +31,14 @@ gulp.task('browserSync', ['build'], function() {
         server: {
             baseDir: "build/"
         },
-        open: false
+        open: false,
+        tunnel: "kopplin"
     });
 });
 
 gulp.task('img', function(tmp) {
     gulp.src(['app/assets/images/**/*.jpg', 'app/assets/images/**/*.png'])
+        .pipe(cache('img-cache'))
         .pipe(plumber())
         .pipe(imagemin({
             optimizationLevel: 5,
@@ -51,8 +51,8 @@ gulp.task('img', function(tmp) {
 
 gulp.task('js', function() {
     return gulp.src(['app/_scripts/**/*.js'])
+        .pipe(cache('js-cache'))
         .pipe(jshint())
-        // .pipe(jshint.reporter('default'))
         .pipe(plumber())
         .pipe(concat('app.js'))
         .on('error', gutil.log)
@@ -64,6 +64,7 @@ gulp.task('js', function() {
 
 gulp.task('css', function() {
     return gulp.src('app/_sass/main.scss')
+        .pipe(cache('css-cache'))
         .pipe(plumber())
         .pipe(sourceMaps.init())
         .pipe(sass({
