@@ -14,6 +14,7 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     sequence = require('run-sequence'),
     shell = require('gulp-shell'),
+    base64 = require('gulp-base64'),
     cp = require('child_process');
 
 gulp.task('build', function (done) {
@@ -66,6 +67,7 @@ gulp.task('css', function() {
     return gulp.src('_sass/main.scss')
         .pipe(cache('css-cache'))
         .pipe(plumber())
+        .pipe(base64())
         .pipe(sourceMaps.init())
         .pipe(sass({
               errLogToConsole: true
