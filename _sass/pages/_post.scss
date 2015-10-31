@@ -1,26 +1,23 @@
-.post-template {
+.post {
+    position: relative;
+    width: 100%;
+    max-width: 610px;
+    margin: 5rem auto;
+    padding-bottom: 4rem;
+    word-break: break-word;
+    hyphens: auto;
 
-    .post {
-        position: relative;
-        width: 100%;
-        max-width: 610px;
-        margin: 5rem auto;
-        padding-bottom: 4rem;
-        word-break: break-word;
-        hyphens: auto;
+    .post-content {
 
-        .post-content {
-            
-            & p:nth-child(1)::first-letter {
-                font-family: $fontSans;
-                font-size: 10rem;
-                font-weight: bold;
-                float: left;
-                margin: 0px 10px 0 0;
-                line-height: 1;
-                display: inline-block;
-                color: $beta;
-            }
+        & p:nth-child(1)::first-letter {
+            font-family: $fontSans;
+            font-size: 10rem;
+            font-weight: bold;
+            float: left;
+            margin: 0px 10px 0 0;
+            line-height: 1;
+            display: inline-block;
+            color: $beta;
         }
     }
 }
