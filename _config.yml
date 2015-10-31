@@ -3,10 +3,6 @@ name: Sérgio Kopplin
 # utilizado em diversas tags <a>
 baseurl: /
 
-# pastas do build
-source: ./app
-destination: ./_site
-
 # url de base para imagens
 url: http://koppl.in
 
@@ -14,8 +10,7 @@ url: http://koppl.in
 domain_name: 'http://koppl.in/'
 
 # pastas de build
-source: app
-destination: build
+destination: ./build
 
 # numero de posts por pagina
 paginate: 3

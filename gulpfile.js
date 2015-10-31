@@ -29,7 +29,7 @@ gulp.task('rebuild', ['build'], function () {
 gulp.task('browserSync', ['build'], function() {
     browserSync({
         server: {
-            baseDir: "build/"
+            baseDir: "./build/"
         },
         open: false,
         tunnel: "kopplin"
@@ -37,7 +37,7 @@ gulp.task('browserSync', ['build'], function() {
 });
 
 gulp.task('img', function(tmp) {
-    gulp.src(['app/assets/images/**/*.jpg', 'app/assets/images/**/*.png'])
+    gulp.src(['./assets/images/**/*.jpg', './assets/images/**/*.png'])
         .pipe(cache('img-cache'))
         .pipe(plumber())
         .pipe(imagemin({
@@ -45,25 +45,25 @@ gulp.task('img', function(tmp) {
             progressive: true,
             interlaced: true
         }))
-        .pipe(gulp.dest('build/assets/images'))
-        .pipe(gulp.dest('app/assets/images'));
+        .pipe(gulp.dest('./build/assets/images'))
+        .pipe(gulp.dest('./assets/images'));
 });
 
 gulp.task('js', function() {
-    return gulp.src(['app/_scripts/**/*.js'])
+    return gulp.src(['./_scripts/**/*.js'])
         .pipe(cache('js-cache'))
         .pipe(jshint())
         .pipe(plumber())
         .pipe(concat('app.js'))
         .on('error', gutil.log)
-        .pipe(gulp.dest('build/assets/js'))
+        .pipe(gulp.dest('./build/assets/js'))
         .pipe(uglify())
-        .pipe(gulp.dest('app/assets/js'))
+        .pipe(gulp.dest('./assets/js'))
         .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('css', function() {
-    return gulp.src('app/_sass/main.scss')
+    return gulp.src('./_sass/main.scss')
         .pipe(cache('css-cache'))
         .pipe(plumber())
         .pipe(sourceMaps.init())
@@ -77,17 +77,17 @@ gulp.task('css', function() {
         .on('error', gutil.log)
         .pipe(concat('main.css'))
         .pipe(sourceMaps.write())
-        .pipe(gulp.dest('build/assets/css'))
+        .pipe(gulp.dest('./build/assets/css'))
         .pipe(minifyCSS())
-        .pipe(gulp.dest('app/assets/css'))
+        .pipe(gulp.dest('./assets/css'))
         .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/_scripts/**', ['js']);
-    gulp.watch('app/_sass/**', ['css']);
-    gulp.watch('app/images/**', ['img']);
-    gulp.watch('app/**/*.{html,markdown,md,xml,txt}', ['rebuild']);
+    gulp.watch('./_scripts/**', ['js']);
+    gulp.watch('./_sass/**', ['css']);
+    gulp.watch('./images/**', ['img']);
+    gulp.watch('./**/*.{html,markdown,md,xml,txt}', ['rebuild']);
 });
 
 gulp.task('default', function(){
