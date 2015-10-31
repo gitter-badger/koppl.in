@@ -1,0 +1,57 @@
+{% if page.class == 'page-template' %}
+    <header class="page-header">
+        <a href="javascript:void(0)" class="hamburguer" id="hamburguer__open">
+            <div class="menui hamburguer__top-menu"></div>
+            <div class="menui hamburguer__mid-menu"></div>
+            <div class="menui hamburguer__bottom-menu"></div>
+        </a>
+
+        <div class="inner">
+            <h1 class="page-header__title">{{ page.title }}</h1>
+        </div>
+    </header>
+{% else %}
+    <header class="post-header">
+        <a href="javascript:void(0)" class="hamburguer" id="hamburguer__open">
+            <div class="menui hamburguer__top-menu"></div>
+            <div class="menui hamburguer__mid-menu"></div>
+            <div class="menui hamburguer__bottom-menu"></div>
+        </a>
+
+        {% if page.header_type == 'full' %}
+            {% assign header_type = 'tipo' %}
+        {% else %}
+            {% assign header_type = 'minimal' %}
+        {% endif %}
+
+        <div class="post-header__type-{{ header_type }}">
+            <div class="vertical">
+                <h1 class="post-header__title">{{ page.title }}</h1>
+
+                <!-- <section class="post-meta">
+                    <time class="page-date" datetime="{{ page.date | date:"%d-%m-%Y" }}">
+                        {{ page.date | date_to_string }}
+                    </time>
+                    {% if page.categories.size > 0 %}
+                        em
+                        {% for category in page.categories %}{% if forloop.last == false %}
+                            <a href="{{ site.baseurl }}categorias/#{{ category }}">{{ category }}</a> e
+                        {% else %}
+                            <a href="{{ site.baseurl }}categorias/#{{ category }}">{{ category }}</a>
+                        {% endif %}{% endfor %}
+                    {% endif %}
+
+                    {% if page.trilha_nome %}
+                        |
+                        <a href="{{ page.trilha }}" target="_blank">{{ page.trilha_nome }}</a>
+                    {% endif %}
+
+                    {% if page.passagem %}
+                        |
+                        <a href="{{ page.passagem_link }}" target="_blank">{{ page.passagem }}</a>
+                    {% endif %}
+                </section> -->
+            </div>
+        </div>
+    </header>
+{% endif %}
