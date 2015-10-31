@@ -2,6 +2,7 @@
 layout: page
 title: Sobre mim
 permalink: /sobre/index.html
+class: page-template
 ---
 
 Olá. Meu nome é Sérgio A. Kopplin, nascido no mesmo ano de "[The Silence of the Lambs][imdb]" e formado em Sistemas para Internet. Sou de Barueri/SP. Já trabalhei como professor de informática básica, professor de música (bateria), com "redes e infra-estrutura" e atualmente sou desenvolvedor web, tanto de back-end como de front-end. Mas meu preferido é o front-end!
