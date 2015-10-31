@@ -65,6 +65,12 @@ a:hover {
     color: #000000;
 }
 
+p {
+    line-height: 1.6;
+    font-size: 1.8rem;
+    display: block;
+}
+
 p, ul, ol, dl {
     -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;

@@ -39,7 +39,7 @@ gulp.task('browserSync', ['build'], function() {
 
 gulp.task('img', function(tmp) {
     gulp.src(['assets/images/**/*.jpg', 'assets/images/**/*.png'])
-        .pipe(cache('img-cache'))
+        // .pipe(cache('img-cache'))
         .pipe(plumber())
         .pipe(imagemin({
             optimizationLevel: 5,
@@ -57,7 +57,7 @@ gulp.task('js', function() {
             'bower_components/trianglify/dist/trianglify.min.js',
             '_scripts/index.js'
         ])
-        .pipe(cache('js-cache'))
+        // .pipe(cache('js-cache'))
         .pipe(jshint())
         .pipe(plumber())
         .pipe(concat('app.js'))
@@ -70,7 +70,7 @@ gulp.task('js', function() {
 
 gulp.task('css', function() {
     return gulp.src('_sass/main.scss')
-        .pipe(cache('css-cache'))
+        // .pipe(cache('css-cache'))
         .pipe(plumber())
         .pipe(base64())
         .pipe(sourceMaps.init())

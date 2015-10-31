@@ -76,17 +76,14 @@
     margin: 0 auto;
 
     .inner {
-        width: 80%;
-        max-width: 710px;
         text-align: center;
     }
 
     .page-header__title {
-        font-family: $fontSans;
+        font-family: $fontSerif;
         text-transform: uppercase;
-        font-weight: bold;
         letter-spacing: 0;
-        font-size: 7rem;
+        font-size: 12rem;
     }
 
     .page-header__nav {
