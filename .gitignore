@@ -7,3 +7,4 @@ vendor
 npm-debug.log
 .bundle
 build
+bower_components
