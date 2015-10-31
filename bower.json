@@ -1,0 +1,18 @@
+{
+  "name": "kopplin-website",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Sergio Kopplin <sergiokopplin@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/sergiokopplin/kopplin-website",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
