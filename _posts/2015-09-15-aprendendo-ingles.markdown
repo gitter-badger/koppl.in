@@ -11,6 +11,7 @@ keywords:
 - duolingo
 description: "Olá, já parou para estudar inglês hoje? Pois é, tenho feito isso durante algum tempo e queria colocar as ferramentas que eu uso aqui nesse post para ajudar outras pessoas."
 img: aprendendo-ingles/bg.jpg
+poster: aprendendo-ingles/bg.jpg
 ---
 
 O inglês é essencial hoje em dia, e como não temos como fugir disso, então bora aprender.

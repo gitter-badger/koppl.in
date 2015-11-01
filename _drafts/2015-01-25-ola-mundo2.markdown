@@ -3,7 +3,8 @@ title: "Markdown Test"
 layout: post
 date: 2020-10-19 14:40
 categories: markdown
-poster: https://d262ilb51hltx0.cloudfront.net/max/2000/1*oGWXVa6heGBYN7gycw37Ug.png
+poster: aprendendo-ingles/bg.jpg
+poster: markdown/markdown.png
 header_type: full
 keywords:
 - markdown

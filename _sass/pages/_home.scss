@@ -15,6 +15,27 @@
         }
     }
 
+    .main-post__title-poster {
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    .main-post__poster {
+        width: 120%;
+        margin: 0 -10%;
+        height: 300px;
+        display: block;
+        text-indent: -9999px;
+        background-size: cover !important;
+        background-position: center;
+    }
+
     .main-post__meta {
         display: block;
         margin: 3rem 0 0;
@@ -48,6 +69,18 @@
                 margin-right: 10px;
             }
         }
+    }
+
+    .main-post__meta-poster {
+        position: absolute;
+        top: 200px;
+        left: 0;
+        right: 0;
+        color: #fff;
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        border: 2px solid #fff;
     }
 
     hr {

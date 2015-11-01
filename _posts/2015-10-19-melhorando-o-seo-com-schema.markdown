@@ -11,7 +11,6 @@ keywords:
 - meta-data
 - semantyc
 description: "Melhore o posicionamento e como os robôs entendem o seu site com o Schema.org."
-img: http://wallwindow.com/wp-content/uploads/2014/10/hipster-triangle-wallpaper.jpg
 related:
   - title: "Loop Infinito - Microdata"
     url: http://loopinfinito.com.br/2012/05/07/ganhando-visibilidade-com-schema-org
