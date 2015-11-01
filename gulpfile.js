@@ -33,6 +33,7 @@ gulp.task('browserSync', ['build'], function() {
             baseDir: "build/"
         },
         open: false,
+        online: false
         // tunnel: "kopplin"
     });
 });
