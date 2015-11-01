@@ -55,6 +55,7 @@ gulp.task('js', function() {
             'bower_components/jquery/dist/jquery.js',
             'bower_components/jquery.fitvids/jquery.fitvids.js',
             'bower_components/trianglify/dist/trianglify.min.js',
+            'bower_components/clipboard/dist/clipboard.js',
             '_scripts/index.js'
         ])
         // .pipe(cache('js-cache'))

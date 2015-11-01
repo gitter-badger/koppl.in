@@ -9,15 +9,27 @@
 
     .post-content {
 
-        & p:nth-child(1)::first-letter {
-            font-family: $fontSans;
-            font-size: 10rem;
-            font-weight: bold;
-            float: left;
-            margin: 0px 10px 0 0;
+        & blockquote p:nth-child(1)::first-letter {
+            font-size: inherit;
+            float: none;
+            margin: 0;
             line-height: 1;
+            color: $alpha;
+        }
+
+        & p:nth-child(1)::first-letter {
+            font-family: $fontSerif;
+            font-size: 6rem;
+            font-weight: normal;
+            float: left;
+            margin: 15px 3px 0 0;
+            line-height: .5;
             display: inline-block;
             color: $beta;
+        }
+
+        img {
+            width: 100%;
         }
     }
 }

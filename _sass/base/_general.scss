@@ -69,6 +69,10 @@ p {
     line-height: 1.6;
     font-size: 1.8rem;
     display: block;
+
+    & .evidence {
+        background-image: linear-gradient(to bottom, rgba(39, 237, 244, 0.1), rgba(39, 244, 244, 0.1));
+    }
 }
 
 p, ul, ol, dl {
@@ -127,7 +131,7 @@ blockquote {
     box-sizing: border-box;
     margin: 1.75em 0 1.75em -2.2em;
     padding: 0 0 0 1.75em;
-    border-left: #4A4A4A 0.4em solid;
+    border-left: $alpha 0.4em solid;
 }
 
 blockquote p {
@@ -159,24 +163,21 @@ code, tt {
     font-family: $fontMonospace;
     font-size: 0.85em;
     white-space: pre-wrap;
-    border: #E3EDF3 1px solid;
-    background: #F7FAFB;
+    background: rgba(0,0,0,0.05);
     border-radius: 2px;
 }
 
 pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 0 -13% 1.75em -13%;
-    border: #E3EDF3 1px solid;
-    width: 126%;
+    margin: 0 0 1.75em 0;
+    width: 100%;
     padding: 10px;
     font-family: $fontMonospace;
     font-size: 0.8em;
     white-space: pre;
     overflow: auto;
-    background: #F7FAFB;
-    border-radius: 3px;
+    background: rgba(0,0,0,0.05);
 }
 
 pre code, tt {
@@ -250,10 +251,9 @@ table.plain tbody > tr:nth-child(odd) > th {
 iframe, .fluid-width-video-wrapper {
     display: block;
     margin: 1.75em 0;
+    width: 100%;
 }
 
-/* When a video is inside the fitvids wrapper, drop the
-margin on the iframe, cause it breaks stuff. */
 .fluid-width-video-wrapper iframe {
     margin: 0;
 }

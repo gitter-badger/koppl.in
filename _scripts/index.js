@@ -61,6 +61,7 @@
         $(window).smartresize(casperFullImg);
 
         $(".main-header__scroll-down").arctic_scroll();
+        $(".post-header__scroll-down").arctic_scroll();
     });
 
     // smartresize
@@ -134,35 +135,32 @@
 
     $('.menu-wrap').attr('style', 'background-image: url(' + triangle.png() + ')');
 
-    // HAMBURGLERv2
-
-
-
 })(jQuery, 'smartresize');
 
 function togglescroll() {
-  $('body').on('touchstart', function(e) {
-    if ($('body').hasClass('noscroll')) {
-      e.preventDefault();
-    }
-  });
+    $('body').on('touchstart', function(e) {
+        if ($('body').hasClass('noscroll')) {
+            e.preventDefault();
+        }
+    });
 }
 
 $(document).ready(function() {
-  togglescroll();
+    togglescroll();
 
-  $("#hamburguer__open").click(function() {
-    $(this).fadeOut('fast');
-    $("body").addClass("show-menu");
-    $("#hamburguer__close").fadeIn('fast');
-  });
+    $("#hamburguer__open").click(function() {
+        $(this).fadeOut('fast');
+        $("body").addClass("show-menu");
+        $("#hamburguer__close").fadeIn('fast');
+    });
 
-  $("#hamburguer__close").click(function() {
-    $(this).fadeOut('fast');
-    $("body").removeClass("show-menu");
-    $("#hamburguer__open").fadeIn('fast');
-  });
+    $("#hamburguer__close").click(function() {
+        $(this).fadeOut('fast');
+        $("body").removeClass("show-menu");
+        $("#hamburguer__open").fadeIn('fast');
+    });
 
+    new Clipboard('.clipboard');
 });
 
 // // PUSH ESC KEY TO EXIT

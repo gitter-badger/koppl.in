@@ -1,8 +1,10 @@
 ---
-title: "Markdown Test"
+title: "Markdown"
 layout: post
 date: 2020-10-19 14:40
 categories: seo
+poster: https://d262ilb51hltx0.cloudfront.net/max/2000/1*oGWXVa6heGBYN7gycw37Ug.png
+header_type: full
 keywords:
 - seo
 - schema
@@ -13,7 +15,6 @@ keywords:
 description: "Melhore o posicionamento e como os robôs entendem o seu site com o Schema.org."
 trilha_nome: John Mayer - XO
 trilha: https://open.spotify.com/track/7cpCU3Denug5NGZsSpQl8v
-img: schema/main.jpg
 comments: true
 related:
   - title: "Loop Infinito - Microdata"
@@ -38,7 +39,7 @@ Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered H
   - See HTML in the right
   - Magic
 
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]
+<span class="evidence">Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]</span>
 
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
@@ -74,18 +75,22 @@ And of course Dillinger itself is open source with a [public repository][dill]
 
 You need Gulp installed globally:
 
-```sh
+{% highlight sh %}
 $ npm i -g gulp
-```
+{% endhighlight %}
 
-```sh
+<div id="code1">
+{% highlight sh %}
 $ git clone [git-repo-url] dillinger
 $ cd dillinger
 $ npm i -d
 $ mkdir -p downloads/files/{md,html,pdf}
 $ gulp build --prod
 $ NODE_ENV=production node app
-```
+{% endhighlight %}
+</div>
+
+<button class="clipboard" data-clipboard-target="#code1">copiar</button>
 
 ### Plugins
 

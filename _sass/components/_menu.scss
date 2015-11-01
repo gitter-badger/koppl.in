@@ -80,26 +80,14 @@
 }
 
 .show-menu .content-wrap {
-    -webkit-transform: translate3d(250px,0,0);
     transform: translate3d(250px,0,0);
 }
 
 .content-wrap {
-    -o-transition-duration: .3s;
-    -webkit-transition-duration: .3s;
     transition-duration: .3s;
-    -moz-box-shadow: rgba(0,0,0,.6) -12px 0 50px;
-    -webkit-box-shadow: rgba(0,0,0,.6) -12px 0 50px;
     box-shadow: rgba(0,0,0,.6) -12px 0 50px;
     position: relative;
-    display: flex;
-    display: -ms-flexbox;
-    min-height: 100vh;
-    -moz-box-direction: column;
-    -webkit-box-direction: column;
-    -ms-flexbox-direction: column;
-    flex-direction: column;
-    background-color: #f8f8f8;
+    background-color: #fff;
     overflow: hidden;
     overflow-y: auto;
     z-index: 9;

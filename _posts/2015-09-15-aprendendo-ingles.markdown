@@ -13,14 +13,9 @@ description: "Olá, já parou para estudar inglês hoje? Pois é, tenho feito is
 trilha_nome: Foo Fighters - My Hero
 trilha: https://open.spotify.com/track/7u5dBtASrtOuBTTZjJrvuJ
 img: aprendendo-ingles/bg.jpg
-
 ---
 
 O inglês é essencial hoje em dia, e como não temos como fugir disso, então bora aprender.
-
-![Yellow](/assets/images/aprendendo-ingles/bg.jpg)
-
-<p class="img-legenda">fonte: google images</p>
 
 ###Inglês Particular: [Privy English](http://privyenglish.com.br/)
 Faço inglês particular com uma amiga e isso fez toda a diferença. Ainda que façamos a aula (1 hora) e não tenha um conteúdo programado, acabamos por conversar 1 hora somente em inglês de coisas da vida. **E ISSO FAZ TODA A DIFERENÇA**. O preço é acessível e eu faço via Skype.

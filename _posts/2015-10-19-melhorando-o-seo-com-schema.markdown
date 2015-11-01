@@ -13,7 +13,7 @@ keywords:
 description: "Melhore o posicionamento e como os robôs entendem o seu site com o Schema.org."
 trilha_nome: John Mayer - XO
 trilha: https://open.spotify.com/track/7cpCU3Denug5NGZsSpQl8v
-img: schema/main.jpg
+img: http://wallwindow.com/wp-content/uploads/2014/10/hipster-triangle-wallpaper.jpg
 comments: true
 related:
   - title: "Loop Infinito - Microdata"
@@ -32,9 +32,7 @@ related:
 
 SEO é um termo muito utilizado quando tratamos de desenvolvimento WEB, e uma das técnicas que
 podem nos ajudar nesse processo é a de identificar corretamente o conteúdo de nosso site
-através do Schema.org.
-
-Dentro do [Schema.org][s] você encontra todas as tags necessários e sua documentação,
+através do Schema.org. Dentro do [Schema.org][s] você encontra todas as tags necessários e sua documentação,
 e depois de aplicá-las você pode testar na ferramenta do Google dedicada para isso,
 [Structured Data Testing Tool][g].
 

@@ -11,19 +11,9 @@ Atualmente trabalho na [Catho Online][catho] e faço parte do time de desenvolvi
 
 ![Perfil][img]{:class="center"}{:style="margin: 0 auto; width: 300px; border-radius: 100%;"}
 
-Sou discípulo e membro da [IPI][ipi] desde sempre, e é lá que eu demonstro todo o meu talento musical como baterista.
+Sou discípulo e membro da [IPI][ipi] desde sempre, e é lá que eu demonstro todo o meu talento musical como baterista. Você também pode me contrar nas redes socias [Facebook][f], [Twitter][t], [Spotify][s], [Youtube][y], [Github][g], [SlideShare][ss] e no [E-mail][e].
 
-#### Você pode me encontrar em algumas redes sociais:
-
-- [Facebook][f]
-- [Twitter][t]
-- [Spotify][s]
-- [Youtube][y]
-- [Github][g]
-- [SlideShare][ss]
-- [E-mail][e]
-
-Apesar desse site ser sobre desenvolvimento você também pode dar uma olhada nos meus trabalhos como baterista no meu canal do [Youtube][y] ou conferir a playlist abaixo:
+Mas apesar desse site ser sobre desenvolvimento você também pode dar uma olhada nos meus trabalhos como baterista no meu canal do [Youtube][y] ou conferir a playlist abaixo:
 
 <iframe width="700" height="394" src="//www.youtube.com/embed/videoseries?list=PLEOSK5h2UUqVC3U2_NygtskxAaLW0DfUK" frameborder="0" allowfullscreen></iframe>
 

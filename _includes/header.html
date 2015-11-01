@@ -18,40 +18,21 @@
             <div class="menui hamburguer__bottom-menu"></div>
         </a>
 
-        {% if page.header_type == 'full' %}
-            {% assign header_type = 'tipo' %}
-        {% else %}
-            {% assign header_type = 'minimal' %}
-        {% endif %}
-
-        <div class="post-header__type-{{ header_type }}">
-            <div class="vertical">
+        <div class="post-header__content">
+            <div class="inner">
                 <h1 class="post-header__title">{{ page.title }}</h1>
 
-                <!-- <section class="post-meta">
-                    <time class="page-date" datetime="{{ page.date | date:"%d-%m-%Y" }}">
-                        {{ page.date | date_to_string }}
-                    </time>
-                    {% if page.categories.size > 0 %}
-                        em
-                        {% for category in page.categories %}{% if forloop.last == false %}
-                            <a href="{{ site.baseurl }}categorias/#{{ category }}">{{ category }}</a> e
-                        {% else %}
-                            <a href="{{ site.baseurl }}categorias/#{{ category }}">{{ category }}</a>
-                        {% endif %}{% endfor %}
-                    {% endif %}
-
-                    {% if page.trilha_nome %}
-                        |
-                        <a href="{{ page.trilha }}" target="_blank">{{ page.trilha_nome }}</a>
-                    {% endif %}
-
-                    {% if page.passagem %}
-                        |
-                        <a href="{{ page.passagem_link }}" target="_blank">{{ page.passagem }}</a>
-                    {% endif %}
-                </section> -->
+                <div class="post-header__meta">
+                    <a href="#">{{ page.categories }}</a>
+                    <time class="main-post__date" datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%b, %Y" }}</time>
+                </div>
             </div>
+
+            {% if page.poster %}
+                <img src="{{ page.poster }}" alt="">
+                <a class="post-header__scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
+            {% endif %}
         </div>
+
     </header>
 {% endif %}

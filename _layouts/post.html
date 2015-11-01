@@ -1,18 +1,20 @@
 ---
 layout: default
 ---
+
 {% include menu.html %}
 
 <div class="content-wrap">
+
     {% include header.html %}
 
     <article class="post" role="article">
-        <section class="post-content">
+        <section class="post-content" id="content">
             {{content}}
         </section>
     </article>
 
-    <!-- <footer class="post-footer">
+    <footer class="post-footer">
         <figure class="author-image">
             <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.picture }})"></a>
         </figure>
@@ -22,7 +24,7 @@ layout: default
             <p>{{ site.bio }}</p>
         </section>
 
-        {% include share.html %}
-        {% include disqus.html %}
-    </footer> -->
+        <!-- {% include share.html %} -->
+        <!-- {% include disqus.html %} -->
+    </footer>
 </div>
