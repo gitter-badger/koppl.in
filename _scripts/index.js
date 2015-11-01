@@ -161,6 +161,18 @@ $(document).ready(function() {
     });
 
     new Clipboard('.clipboard');
+
+    var numberOfPre = $('pre').length;
+
+    if (numberOfPre > 0) {
+        for(var id = 0; id < numberOfPre; id++) {
+            var selectedPre = $('pre')[id];
+
+            html = '';
+            html += '<button class="clipboard" data-clipboard-target="#preId' + id +'"><span class="btn-clipboard icon-paste" alt="copiar"></span></button>';
+            $(selectedPre).attr('id', 'preId' + id).after(html);
+        }
+    }
 });
 
 // // PUSH ESC KEY TO EXIT
@@ -177,7 +189,7 @@ $(document).ready(function() {
 // Sticky Header
 $(window).scroll(function() {
 
-    if ($(window).scrollTop() > 100 && !$("body").hasClass('show-menu')) {
+    if ($(window).scrollTop() > 900 && !$("body").hasClass('show-menu')) {
         $('#hamburguer__open').fadeOut('fast');
     } else if (!$("body").hasClass('show-menu')) {
         $('#hamburguer__open').fadeIn('fast');

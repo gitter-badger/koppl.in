@@ -9,10 +9,6 @@ keywords:
 - front-end
 - web
 description: "Um novo blog acaba de surgir, nesse caso é o meu blog. Acredito que por ser meio perfeccionista, ele tenha demorado quase 1 ano pra ser terminado. Mas agora que consegui chegar num consenso entre meu lado front-end e meu lado back-end, acredito que posso seguir em frente."
-trilha_nome: Coldplay - Yellow
-trilha: https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg
-passagem: Ne 8:10
-passagem_link: https://www.bible.com/pt/bible/211/neh.8.10.ntlh
 img: ola-mundo/yellow.jpg
 ---
 Um novo blog acaba de surgir, nesse caso é o meu blog. Acredito que por ser meio perfeccionista, ele tenha demorado quase 1 ano pra ser terminado. Mas agora que consegui chegar num consenso entre meu lado front-end e meu lado back-end, acredito que posso seguir em frente.

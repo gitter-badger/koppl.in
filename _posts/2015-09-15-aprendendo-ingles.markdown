@@ -10,8 +10,6 @@ keywords:
 - howto
 - duolingo
 description: "Olá, já parou para estudar inglês hoje? Pois é, tenho feito isso durante algum tempo e queria colocar as ferramentas que eu uso aqui nesse post para ajudar outras pessoas."
-trilha_nome: Foo Fighters - My Hero
-trilha: https://open.spotify.com/track/7u5dBtASrtOuBTTZjJrvuJ
 img: aprendendo-ingles/bg.jpg
 ---
 

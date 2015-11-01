@@ -160,10 +160,13 @@ mark {
 
 code, tt {
     padding: 1px 3px;
-    font-family: $fontMonospace;
-    font-size: 0.85em;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 12px;
+    line-height: 20px;
     white-space: pre-wrap;
-    background: rgba(0,0,0,0.05);
+    background: #fff;
+    border: 1px solid $delta;
+    border-radius: 2px;
     border-radius: 2px;
 }
 
@@ -172,12 +175,21 @@ pre {
     box-sizing: border-box;
     margin: 0 0 1.75em 0;
     width: 100%;
-    padding: 10px;
-    font-family: $fontMonospace;
-    font-size: 0.8em;
+    padding: 5px 10px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 12px;
+    line-height: 20px;
     white-space: pre;
     overflow: auto;
-    background: rgba(0,0,0,0.05);
+    background: #fff;
+    border: 1px solid $delta;
+    border-radius: 2px;
+
+    .lineno {
+        border-right: 1px solid $delta;
+        padding-right: 10px;
+        display: inline-block;
+    }
 }
 
 pre code, tt {

@@ -11,8 +11,6 @@ keywords:
 - spacegray
 - carmesim
 description: "Sublime Text 3 Theme. A mix from the Dracula and the Spacegray."
-trilha_nome: Birdy - Wings
-trilha: http://play.spotify.com/album/6rgoVsDl432kAvqmGfrwZp
 img: carmesim/carmesim.png
 ---
 Sublime Text 3 Theme. A mix from the Dracula and the Spacegray.

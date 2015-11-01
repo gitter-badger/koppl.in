@@ -11,10 +11,7 @@ keywords:
 - meta-data
 - semantyc
 description: "Melhore o posicionamento e como os robôs entendem o seu site com o Schema.org."
-trilha_nome: John Mayer - XO
-trilha: https://open.spotify.com/track/7cpCU3Denug5NGZsSpQl8v
 img: http://wallwindow.com/wp-content/uploads/2014/10/hipster-triangle-wallpaper.jpg
-comments: true
 related:
   - title: "Loop Infinito - Microdata"
     url: http://loopinfinito.com.br/2012/05/07/ganhando-visibilidade-com-schema-org
@@ -27,7 +24,6 @@ related:
   - title: "Google Developers Testing Tool"
     url: https://developers.google.com/structured-data/testing-tool/
     from: googledevelopers
-
 ---
 
 SEO é um termo muito utilizado quando tratamos de desenvolvimento WEB, e uma das técnicas que

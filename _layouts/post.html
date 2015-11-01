@@ -12,19 +12,19 @@ layout: default
         <section class="post-content" id="content">
             {{content}}
         </section>
+
+        <footer class="post-footer">
+            <figure class="author-image">
+                <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.picture }})"></a>
+            </figure>
+
+            <section class="author">
+                <h4>{{ site.name }}</h4>
+                <p>{{ site.bio }}</p>
+            </section>
+
+            <!-- {% include share.html %} -->
+            <!-- {% include disqus.html %} -->
+        </footer>
     </article>
-
-    <footer class="post-footer">
-        <figure class="author-image">
-            <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.picture }})"></a>
-        </figure>
-
-        <section class="author">
-            <h4>{{ site.name }}</h4>
-            <p>{{ site.bio }}</p>
-        </section>
-
-        <!-- {% include share.html %} -->
-        <!-- {% include disqus.html %} -->
-    </footer>
 </div>

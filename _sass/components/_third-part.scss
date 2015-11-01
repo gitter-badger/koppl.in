@@ -14,3 +14,35 @@
     display: inline-block !important;
     padding: 0 !important;
 }
+
+.highlight {
+    position: relative;
+
+    button {
+        position: absolute;
+        right: 1px;
+        bottom: 1px;
+        height: 24px;
+        font-size: 12px;
+        font-family: arial;
+        padding: 5px 6px;
+        line-height: 1;
+        background: #fff;
+        border: none;
+        border-top-left-radius: 3px;
+        color: $alpha;
+
+        &:hover:after {
+            content: "copiar";
+            background: $alpha;
+            position: absolute;
+            top: -25px;
+            left: -11px;
+            color: #fff;
+            display: block;
+            width: 47px;
+            padding: 5px 0;
+            border-radius: 2px;
+        }
+    }
+}
