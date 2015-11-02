@@ -1,0 +1,66 @@
+.author {
+    width: 100%;
+    padding-bottom: 5rem;
+    height: 200px;
+
+    .author__picture {
+        max-width: 120px;
+        border-radius: 100%;
+    }
+
+    .author__name {
+        font-size: 2.5rem;
+        font-family: $fontSerif;
+        font-weight: bold;
+    }
+
+    .author__bio {
+        font-family: $fontExtra;
+        font-weight: normal;
+        color: $epsilon;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    .author__marker {
+        font-weight: normal;
+        color: $epsilon;
+        font-size: 13px;
+        display: inline-block;
+        font-family: $fontExtra;
+
+        span {
+            font-size: 2rem;
+            position: relative;
+            top: 3px;
+        }
+    }
+
+    .author__email {
+        font-weight: normal;
+        color: $epsilon;
+        font-size: 13px;
+        display: inline-block;
+        margin-left: 2rem;
+        font-family: $fontExtra;
+
+        span {
+            font-size: 2rem;
+            position: relative;
+            top: 3px;
+            margin-right: 5px;
+        }
+    }
+
+    .author__left {
+        width: 25%;
+        float: left;
+    }
+
+    .author__right {
+        width: 75%;
+        float: left;
+    }
+}

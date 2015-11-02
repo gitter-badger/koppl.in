@@ -8,6 +8,9 @@
     hyphens: auto;
 
     .post-content {
+        padding-bottom: 2rem;
+        margin-bottom: 5rem;
+        border-bottom: 4px solid $gama;
 
         & blockquote p:nth-child(1)::first-letter {
             font-size: inherit;

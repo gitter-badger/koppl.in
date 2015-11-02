@@ -18,13 +18,12 @@ layout: default
                 <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.picture }})"></a>
             </figure>
 
-            <section class="author">
-                <h4>{{ site.name }}</h4>
-                <p>{{ site.bio }}</p>
-            </section>
+            {% include author.html %}
+
+            <div class="clearfix"></div>
 
             {% include share.html %}
-            
+
             {% include disqus.html %}
 
             {% include footer.html %}

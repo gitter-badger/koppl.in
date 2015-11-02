@@ -73,6 +73,26 @@
             vertical-align: middle;
             width: 100%;
         }
+
+        .main-post__star {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            width: 0;
+        	height: 0;
+        	border-top: 50px solid gold;
+        	border-left: 50px solid transparent;
+            z-index: 99;
+
+            &:before {
+                position: absolute;
+                top: -46px;
+                right: 4px;
+                text-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+            }
+        }
     }
 
     .main-post__title-dark,
