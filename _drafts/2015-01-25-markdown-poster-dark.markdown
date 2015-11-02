@@ -6,25 +6,11 @@ categories: markdown
 poster: markdown/dark.png
 style: dark
 effect: reyes
+star: true
 img: markdown/dark.png
 keywords:
 - markdown
 description: "Markdown Test!"
-trilha_nome: John Mayer - XO
-trilha: https://open.spotify.com/track/7cpCU3Denug5NGZsSpQl8v
-related:
-  - title: "Loop Infinito - Microdata"
-    url: http://loopinfinito.com.br/2012/05/07/ganhando-visibilidade-com-schema-org
-    from: loopinfinito
-  - title: Schema.org
-    url: http://schema.org
-  - title: Getting started
-    url: http://schema.org/docs/gs.html
-    from: schema.org
-  - title: "Google Developers Testing Tool"
-    url: https://developers.google.com/structured-data/testing-tool/
-    from: googledevelopers
-
 ---
 
 # An exhibit of Markdown
@@ -56,65 +42,6 @@ Paragraphs must be separated by a blank line. Basic formatting of *italics* and 
 * Another item
 * Yet another item
 * And there's more...
-
-## Paragraph modifiers
-
-### Code block
-
-A HTML Example:
-
-{% highlight html %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Just a test</h1>
-</body>
-</html>
-{% endhighlight %}
-
-A CSS Example:
-
-{% highlight css %}
-pre {
-    padding: 10px;
-    font-size: .8em;
-    white-space: pre;
-}
-
-pre, table {
-    width: 100%;
-}
-
-code, pre, tt {
-    font-family: Monaco, Consolas, Inconsolata, monospace, sans-serif;
-    background: rgba(0,0,0,.05);
-}
-{% endhighlight %}
-
-A JS Example:
-
-{% highlight js linenos %}
-// Sticky Header
-$(window).scroll(function() {
-
-    if ($(window).scrollTop() > 900 && !$("body").hasClass('show-menu')) {
-        $('#hamburguer__open').fadeOut('fast');
-    } else if (!$("body").hasClass('show-menu')) {
-        $('#hamburguer__open').fadeIn('fast');
-    }
-
-});
-{% endhighlight %}
-
-A GIST Example:
-
-{% gist 896adec9fa1e1930d556 %}
-
-You can also make `inline code` to add code into other things.
 
 ### Quote
 
