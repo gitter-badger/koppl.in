@@ -9,6 +9,7 @@
     .main-post__title {
         font-family: $fontSerif;
         text-align: center;
+        font-size: 5rem;
 
         a {
             text-decoration: none;
@@ -116,7 +117,7 @@
     }
 
     hr {
-        width: 20%;
-        margin: 6rem auto;
+        width: 40%;
+        margin: 8rem auto;
     }
 }
