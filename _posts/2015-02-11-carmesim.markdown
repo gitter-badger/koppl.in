@@ -21,6 +21,6 @@ A set of custom UI themes for Sublime Text 2/3 based on [Spacegray](https://gith
 
 ![image](/assets/images/carmesim/carmesim.png)
 
-<p class="img-legenda" style="margin-top: -60px;">fonte: github.com/sergiokopplin/carmesim</p>
+fonte: github.com/sergiokopplin/carmesim
 
 Confira: [Carmesim](https://packagecontrol.io/packages/Theme%20-%20Carmesim).

@@ -20,6 +20,7 @@ title: Home
             {% if post.poster %}
                 <a href="{{ post.url }}">
                     <div class="main-post__poster main-post__poster-{{ post.style }}">
+                        {% if post.star %}<span class="icon-star-full main-post__star"></span>{% endif %}
                         <img class="main-post__img {{ post.effect }}" src="{{ site.baseurl }}assets/images/{{ post.poster }}" alt="">
                         <h2 class="main-post__title main-post__title-{{ post.style }}">{{ post.title }}</h2>
                     </div>

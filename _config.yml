@@ -22,7 +22,7 @@ exclude: [README.md, vendor, Gemfile, Gemfile.lock, Rakefile, node_modules, gulp
 disqus: sergiokopplin
 
 # bio que vem no rodape dos posts
-bio: 'Baterista desde sempre. Programador desde 2012. Atualmente trabalhando como Front-end Developer na Catho! Formado em Sistemas para Internet. Caçando relíquias na Internet. Morador de Nárnia e Discípulo de Cristo'
+bio: 'Baterista desde sempre. Atualmente trabalhando como Front-end Developer na Catho! Formado em Sistemas para Internet e Discípulo de Cristo'
 
 # trabalho
 job_title: Desenvolvedor Front-end
