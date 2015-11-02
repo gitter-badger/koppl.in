@@ -15,28 +15,6 @@
         }
     }
 
-    .main-post__title-poster {
-        position: absolute;
-        top: 120px;
-        left: 0;
-        right: 0;
-
-        a {
-            color: #fff;
-        }
-    }
-
-    .main-post__poster {
-        width: 120%;
-        margin: 0 -10%;
-        height: 300px;
-        display: block;
-        text-indent: -9999px;
-        background-size: cover !important;
-        background-position: center;
-        box-shadow: rgba(34,34,34,.2) 0 8px 15px;
-    }
-
     .main-post__meta {
         display: block;
         margin: 3rem 0 0;
@@ -72,16 +50,62 @@
         }
     }
 
-    .main-post__meta-poster {
+    .main-post__poster {
+        width: 120%;
+        margin: 0 -10%;
+        height: 300px;
+        position: relative;
+        background-size: cover !important;
+        background-position: center;
+        box-shadow: rgba(34,34,34,.2) 0 8px 15px;
+
+        .main-post__title {
+            position: absolute;
+            top: 120px;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .main-post__title-dark,
+    .main-post__meta-dark,
+    .main-post__meta-dark a,
+    .main-post__meta-dark time {
+        color: #fff !important;
+        border-color: #fff !important;
+    }
+
+    .main-post__title-dark,
+    .main-post__meta-dark a,
+    .main-post__meta-dark time {
+        text-shadow: 0 0px 20px $beta;
+    }
+
+    .main-post__title-light,
+    .main-post__meta-light,
+    .main-post__meta-light a,
+    .main-post__meta-light time {
+        color: $beta !important;
+        border-color: $beta !important;
+    }
+
+    .main-post__title-light,
+    .main-post__meta-light a,
+    .main-post__meta-light time {
+        text-shadow: 0 0px 10px rgba(255, 255, 255, .3);
+    }
+
+    .main-post__meta-dark,
+    .main-post__meta-light {
         position: absolute;
         top: 200px;
         left: 0;
         right: 0;
-        color: #fff;
         display: block;
         width: 200px;
         margin: 0 auto;
-        border: 2px solid #fff;
+        border-width: 2px;
+        border-style: solid;
     }
 
     hr {

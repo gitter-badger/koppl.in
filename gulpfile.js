@@ -32,8 +32,7 @@ gulp.task('browserSync', ['build'], function() {
         server: {
             baseDir: "build/"
         },
-        open: false,
-        online: false
+        open: false
         // tunnel: "kopplin"
     });
 });
@@ -95,7 +94,7 @@ gulp.task('css', function() {
 gulp.task('watch', function() {
     gulp.watch('_scripts/**', ['js']);
     gulp.watch('_sass/**', ['css']);
-    gulp.watch('images/**', ['img']);
+    gulp.watch('assets/images/**', ['img']);
     gulp.watch([
         '_drafts/*',
         '_includes/*',

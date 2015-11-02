@@ -1,17 +1,16 @@
 ---
-title: "Markdown Test"
+title: "Markdown Poster Light"
 layout: post
 date: 2020-10-19 14:40
 categories: markdown
-poster: aprendendo-ingles/bg.jpg
-poster: markdown/markdown.png
-header_type: full
+poster: markdown/light.png
+style: light
+img: markdown/light.png
 keywords:
 - markdown
 description: "Markdown Test!"
 trilha_nome: John Mayer - XO
 trilha: https://open.spotify.com/track/7cpCU3Denug5NGZsSpQl8v
-comments: true
 related:
   - title: "Loop Infinito - Microdata"
     url: http://loopinfinito.com.br/2012/05/07/ganhando-visibilidade-com-schema-org

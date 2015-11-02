@@ -18,13 +18,16 @@ title: Home
     {% for post in paginator.posts %}
         <article class="main-post" role="article">
             {% if post.poster %}
-                <h2 class="main-post__title main-post__title-poster"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <a href="{{ post.url }}" class="main-post__poster" style="background: url({{ site.baseurl }}assets/images/{{ post.poster }})">Poster</a>
+                <a href="{{ post.url }}">
+                    <div class="main-post__poster main-post__poster-{{ post.style }}" style="background: url({{ site.baseurl }}assets/images/{{ post.poster }})">
+                        <h2 class="main-post__title main-post__title-{{ post.style }}">{{ post.title }}</h2>
+                    </div>
+                </a>
             {% else %}
                 <h2 class="main-post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             {% endif %}
 
-            <div class="main-post__meta {% if post.poster %}main-post__meta-poster{% endif %}">
+            <div class="main-post__meta {% if post.poster %}main-post__meta-{{ post.style }}{% endif %}">
                 {% if post.categories.size > 0 %}
                     {% for category in post.categories %}{% if forloop.last == false %}
                         {{ category }} e

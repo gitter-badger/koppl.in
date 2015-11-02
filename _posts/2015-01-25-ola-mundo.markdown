@@ -11,6 +11,7 @@ keywords:
 description: "Um novo blog acaba de surgir, nesse caso é o meu blog. Acredito que por ser meio perfeccionista, ele tenha demorado quase 1 ano pra ser terminado. Mas agora que consegui chegar num consenso entre meu lado front-end e meu lado back-end, acredito que posso seguir em frente."
 img: ola-mundo/yellow.jpg
 poster: ola-mundo/yellow.jpg
+style: light
 ---
 Um novo blog acaba de surgir, nesse caso é o meu blog. Acredito que por ser meio perfeccionista, ele tenha demorado quase 1 ano pra ser terminado. Mas agora que consegui chegar num consenso entre meu lado front-end e meu lado back-end, acredito que posso seguir em frente.
 

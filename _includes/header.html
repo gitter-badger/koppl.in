@@ -18,7 +18,7 @@
             <div class="menui hamburguer__bottom-menu"></div>
         </a>
 
-        <div class="post-header__content">
+        <div class="post-header__content {% if page.poster %}post-header__poster post-header__poster-{{ page.style }}" style="background: url({{ site.baseurl }}assets/images/{{ page.poster }}){% endif %}">
             <div class="inner">
                 <h1 class="post-header__title">{{ page.title }}</h1>
 
@@ -28,10 +28,10 @@
                 </div>
             </div>
 
-            {% if page.poster %}
+            <!-- {% if page.poster %}
                 <a class="post-header__scroll-down icon-arrow-left"><span class="hidden">Scroll Down</span></a>
-                <img src="{{ page.poster }}" alt="">
-            {% endif %}
+                <img class="post-header__poster" src="{{ site.baseurl }}assets/images/{{ page.poster }}" alt="">
+            {% endif %} -->
         </div>
 
     </header>
