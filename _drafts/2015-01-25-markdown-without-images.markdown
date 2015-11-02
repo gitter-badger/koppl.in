@@ -29,6 +29,7 @@ You can pick as item to sse how to apply in markdown.
 ### Especial Elements
 - [Evidence](#evidence)
 - [Clipboard](#clipboard)
+- [Star](#star)
 
 ---
 
@@ -153,6 +154,16 @@ Markdown can also contain images. I'll need to add something here sometime.
 ![Markdowm Image][http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg]
 {% endhighlight %}
 
+Or you can add bigger images. BIGGER!
+
+![Alt text][6]{: .img-bigger}
+<span class="img-description">Legenda da imagem</span>
+
+{% highlight raw %}
+![Alt text][6]{: .img-bigger}
+<span class="img-description">Legenda da imagem</span>
+{% endhighlight %}
+
 ---
 
 ## Evidence
@@ -176,6 +187,16 @@ Are you seeing? Awesome. Just look to the right.
 {% endhighlight %}
 
 ---
+
+## Star
+
+You can star a post.
+
+Just add the tag to the markdown file.
+
+{% highlight raw %}
+star: true
+{% endhighlight %}
 
 [1]: http://daringfireball.net/projects/markdown/
 [2]: http://www.fileformat.info/info/unicode/char/2163/index.htm

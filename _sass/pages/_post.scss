@@ -8,7 +8,7 @@
     hyphens: auto;
 
     .post-content {
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
         margin-bottom: 5rem;
         border-bottom: 4px solid $gama;
 
@@ -33,6 +33,21 @@
 
         img {
             width: 100%;
+        }
+
+        .img-bigger {
+            width: 180%;
+            margin: 6rem -40%;
+        }
+
+        .img-description {
+            margin: -6.5rem auto 9rem auto;
+            display: block;
+            font-size: 13px;
+            font-family: $fontExtra;
+            color: $delta;
+            text-transform: lowercase;
+            text-align: center;
         }
     }
 }
