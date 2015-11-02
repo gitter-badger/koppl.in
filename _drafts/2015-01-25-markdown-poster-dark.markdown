@@ -5,6 +5,7 @@ date: 2020-10-19 14:40
 categories: markdown
 poster: markdown/dark.png
 style: dark
+effect: reyes
 img: markdown/dark.png
 keywords:
 - markdown

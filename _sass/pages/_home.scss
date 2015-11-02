@@ -55,15 +55,22 @@
         margin: 0 -10%;
         height: 300px;
         position: relative;
-        background-size: cover !important;
-        background-position: center;
-        box-shadow: rgba(34,34,34,.2) 0 8px 15px;
+        // box-shadow: rgba(34,34,34,.2) 0 8px 15px;
+        overflow: hidden;
 
         .main-post__title {
             position: absolute;
             top: 120px;
             left: 0;
             right: 0;
+        }
+
+        .main-post__img {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            vertical-align: middle;
+            width: 100%;
         }
     }
 

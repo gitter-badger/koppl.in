@@ -50,6 +50,20 @@
         }
     }
 
+    .social-links {
+        display: block;
+        position: absolute;
+        top: 200px;
+        left: 15px;
+
+        a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+    }
+
     .menu-side__subscribe {
         position: absolute;
         bottom: 35px;

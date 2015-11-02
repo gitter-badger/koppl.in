@@ -33,7 +33,6 @@
     .hamburguer__bottom-menu {
         width: 25px;
         height: 4px;
-        background-color: $beta;
     }
 
     .hamburguer__top-menu {
@@ -49,13 +48,29 @@
     }
 }
 
+.hamburguer-light {
+    .hamburguer__top-menu,
+    .hamburguer__mid-menu,
+    .hamburguer__bottom-menu {
+        background-color: $beta;
+    }
+}
+
+.hamburguer-dark {
+    .hamburguer__top-menu,
+    .hamburguer__mid-menu,
+    .hamburguer__bottom-menu {
+        background-color: #fff;
+        box-shadow: 0 4px 0 rgba(0,0,0,.1);
+    }
+}
+
 .post-header .menui,
 .page-header .menui {
     transition: 0.6s ease;
     transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
     position: absolute;
     left: 15px;
-    box-shadow: 0px 4px 0px rgba(255, 255, 255, 1);
 }
 
 .page-header__nav .menui,
