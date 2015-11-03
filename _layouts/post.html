@@ -12,15 +12,11 @@ layout: default
         <section class="post-content" id="content">
             {{content}}
 
-            {% include related.html %}
-
             {% include share.html %}
         </section>
 
         <footer class="post-footer">
-            <figure class="author-image">
-                <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.picture }})"></a>
-            </figure>
+            {% include related.html %}
 
             {% include author.html %}
 
