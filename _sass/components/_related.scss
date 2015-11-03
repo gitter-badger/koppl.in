@@ -1,19 +1,18 @@
 .related {
     position: relative;
     border-bottom: 4px solid $gama;
+    padding-top: 4rem;
 
     .related__span {
         font-size: 14px;
-        font-family: $fontExtra;
+        font-family: arial, sans-serif;
         display: inline-block;
         background: $beta;
         color: #fff;
         padding: 1px 9px;
         position: absolute;
         z-index: 99;
-        border-radius: 4px;
-        top: 8px;
-        box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.1);
+        top: 50px;
     }
 
     // modifying home style

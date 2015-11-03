@@ -1,6 +1,6 @@
 {% for post in site.related_posts offset:1 limit:1 %}
-    <div class="related">
-        {% if page.categories == post.categories %}
+    {% if page.categories == post.categories %}
+        <div class="related">
             <span class="related__span">post relacionado</span>
 
             <article class="main-post" role="article">
@@ -28,7 +28,6 @@
                     <time class="main-post__date" datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b, %Y" }}</time>
                 </div>
             </article>
-
-        {% endif %}
-    </div>
+        </div>
+    {% endif %}
 {% endfor %}
