@@ -11,6 +11,10 @@ layout: default
     <article class="post" role="article">
         <section class="post-content" id="content">
             {{content}}
+
+            {% include related.html %}
+
+            {% include share.html %}
         </section>
 
         <footer class="post-footer">
@@ -21,8 +25,6 @@ layout: default
             {% include author.html %}
 
             <div class="clearfix"></div>
-
-            {% include share.html %}
 
             {% include disqus.html %}
 

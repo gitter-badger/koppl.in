@@ -1,0 +1,13 @@
+<div class="related">
+    <h4 class="related__title">Posts Relacionados:</h2>
+
+    <ul class="related__list">
+        {% for post in site.related_posts %}
+            {% if page.categories == post.categories %}
+
+                <li class="related__item">{% if post.title %}{{ post.title }}{% endif %}</li>
+
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>

@@ -75,9 +75,7 @@ gulp.task('css', function() {
         .pipe(plumber())
         .pipe(base64())
         .pipe(sourceMaps.init())
-        .pipe(sass({
-              errLogToConsole: true
-        }))
+        .pipe(sass())
         .pipe(autoprefixer({
            browsers: ['last 2 version'],
            cascade:  true
