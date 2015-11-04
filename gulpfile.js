@@ -54,7 +54,6 @@ gulp.task('img', function(tmp) {
 gulp.task('js', function() {
     return gulp.src([
             'bower_components/jquery/dist/jquery.js',
-            'bower_components/jquery.fitvids/jquery.fitvids.js',
             'bower_components/trianglify/dist/trianglify.min.js',
             'bower_components/clipboard/dist/clipboard.js',
             '_scripts/index.js'
