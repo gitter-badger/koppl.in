@@ -46,8 +46,9 @@ twitter: koppl1n
 email: sergiokopplin@gmail.com
 facebook: sergiokopplin
 youtube: sergiokopplin
-githubProfile: sergiokopplin
 github: https://github.com/sergiokopplin/kopplin-website
+githubRep: kopplin-website
+githubProfile: sergiokopplin
 
 # markdown
 markdown: kramdown
