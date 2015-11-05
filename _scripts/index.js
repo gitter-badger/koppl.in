@@ -120,19 +120,21 @@ var Kopplin = {
      * @return {void}
      */
     clipboards: function() {
-        //     new Clipboard('.clipboard');
-        //
-        //     var numberOfPre = $('pre').length;
-        //
-        //     if (numberOfPre > 0) {
-        //         for(var id = 0; id < numberOfPre; id++) {
-        //             var selectedPre = $('pre')[id];
-        //
-        //             html = '';
-        //             html += '<button class="clipboard" data-clipboard-target="#preId' + id +'"><span class="btn-clipboard icon-paste" alt="copiar"></span></button>';
-        //             $(selectedPre).attr('id', 'preId' + id).after(html);
-        //         }
-        //     }
+
+        new Clipboard('.clipboard');
+
+        var numberOfPre = document.querySelectorAll("pre").length;
+
+        if (numberOfPre > 0) {
+            for(var id = 0; id < numberOfPre; id++) {
+                var selectedPre = document.querySelectorAll('pre')[id];
+
+                html = '';
+                html += '<button class="clipboard" data-clipboard-target="#preId' + id +'"><span class="btn-clipboard icon-paste" alt="copiar"></span></button>';
+                selectedPre.setAttribute('id', 'preId' + id);
+                selectedPre.insertAdjacentHTML('afterend', html);
+            }
+        }
     },
 
     /**
@@ -147,7 +149,8 @@ var Kopplin = {
         // Seleciona elementos a seram utilizados
         var hamburguerOpen = document.querySelector("#hamburguer__open")
             , hamburguerClose = document.querySelector("#hamburguer__close")
-            , scrollBtn = document.querySelector("[data-scroll]");
+            , scrollBtn = document.querySelector("[data-scroll]"),
+            preEl = document.querySelector("pre");
 
         // Verifica se os elementos existem e adiciona eventos de click e keydown na página
         if ( hamburguerOpen && hamburguerClose ) {
@@ -168,6 +171,9 @@ var Kopplin = {
 
         // Verifica se existe o botão de scroll e inicia a função
         if (scrollBtn) smoothScroll.init();
+
+        // Verifica se existe elementos pre e inicia o clipboard
+        if (preEl) Kopplin.clipboards();
     }
 };
 
