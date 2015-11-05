@@ -121,10 +121,13 @@ var Kopplin = {
      */
     clipboards: function() {
 
+        // Cria uma nova instância do clipboard API
         new Clipboard('.clipboard');
 
+        // Seleciona todos os elementos pre na página
         var numberOfPre = document.querySelectorAll("pre").length;
 
+        // Coloca o clipboard no rodapé de cada elemento encontrado
         if (numberOfPre > 0) {
             for(var id = 0; id < numberOfPre; id++) {
                 var selectedPre = document.querySelectorAll('pre')[id];
