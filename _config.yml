@@ -42,9 +42,11 @@ title: 'Um baterista programador de Nárnia'
 permalink: /:title/
 
 # sociais
-twitter: 'koppl1n'
+twitter: koppl1n
 email: sergiokopplin@gmail.com
 facebook: sergiokopplin
+youtube: sergiokopplin
+githubProfile: sergiokopplin
 github: https://github.com/sergiokopplin/kopplin-website
 
 # markdown
