@@ -18,10 +18,8 @@ var Kopplin = {
 
         console.log("init");
 
-        this.insertBackground();
-
         smoothScroll.init();
-
+        this.insertBackground();
         this.events();
 
         console.log("fim // init");
@@ -44,26 +42,68 @@ var Kopplin = {
                 x_colors: this.colors[randomColor]
             });
 
-        if ( mainHeader != null ) mainHeader.setAttribute('style', 'background-image: url(' + triangle.png() + ')');
-        if ( menuWrap != null ) menuWrap.setAttribute('style', 'background-image: url(' + triangle.png() + ')');
+        if ( mainHeader ) mainHeader.setAttribute('style', 'background-image: url(' + triangle.png() + ')');
+        if ( menuWrap ) menuWrap.setAttribute('style', 'background-image: url(' + triangle.png() + ')');
     },
 
     hamburguerActions: function( action ) {
         "use strict";
 
-        console.log("hamburguerActions");
+        var hamburguerOpen = document.querySelector("#hamburguer__open").classList
+            , docBody = document.querySelector("body");
+
+        if (action == "open") {
+            docBody.classList.add('show-menu');
+            hamburguerOpen.remove('fadeIn');
+            hamburguerOpen.add('fadeOut');
+        } else if (action == "close") {
+            docBody.classList.remove('show-menu');
+            hamburguerOpen.remove('fadeOut');
+            hamburguerOpen.add('fadeIn');
+        }
     },
 
     hamburguerVisibility: function() {
         "use strict";
 
-        console.log("hamburguerVisibility");
+        var hamburguerOpen = document.querySelector("#hamburguer__open").classList;
+
+        window.addEventListener("scroll", function( event ){
+            console.log(document.body.scrollTop);
+
+            if (document.body.scrollTop > 900 && !document.querySelector("body").classList.contains("show-menu")) {
+                hamburguerOpen.remove('fadeIn');
+                hamburguerOpen.add('fadeOut');
+            } else if (!document.querySelector("body").classList.contains("show-menu")) {
+                hamburguerOpen.remove('fadeOut');
+                hamburguerOpen.add('fadeIn');
+            }
+        });
     },
 
     events: function() {
         "use strict";
 
         console.log("events");
+
+        var hamburguerOpen = document.querySelector("#hamburguer__open")
+            , hamburguerClose = document.querySelector("#hamburguer__close");
+
+        if ( hamburguerOpen && hamburguerClose ) {
+            hamburguerOpen.addEventListener("click", function() {
+                Kopplin.hamburguerActions("open");
+            });
+
+            hamburguerClose.addEventListener("click", function() {
+                Kopplin.hamburguerActions("close");
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.keyCode == 27) Kopplin.hamburguerActions("close");
+            });
+
+            Kopplin.hamburguerVisibility();
+        }
 
         console.log("fim // events");
     }
@@ -77,20 +117,7 @@ var Kopplin = {
 
 })();
 
-//
 // $(document).ready(function() {
-//
-//     $("#hamburguer__open").click(function() {
-//         $(this).fadeOut('fast');
-//         $("body").addClass("show-menu");
-//         $("#hamburguer__close").fadeIn('fast');
-//     });
-//
-//     $("#hamburguer__close").click(function() {
-//         $(this).fadeOut('fast');
-//         $("body").removeClass("show-menu");
-//         $("#hamburguer__open").fadeIn('fast');
-//     });
 //
 //     new Clipboard('.clipboard');
 //
@@ -105,25 +132,4 @@ var Kopplin = {
 //             $(selectedPre).attr('id', 'preId' + id).after(html);
 //         }
 //     }
-// });
-//
-// // // PUSH ESC KEY TO EXIT
-// $(document).keydown(function(e) {
-//     if (e.keyCode == 27) {
-//         $("#hamburguer__close").fadeOut('fast');
-//         $("body").removeClass("show-menu");
-//         $("#hamburguer__open").fadeIn('fast');
-//     }
-// });
-//
-//
-// // Sticky Header
-// $(window).scroll(function() {
-//
-//     if ($(window).scrollTop() > 900 && !$("body").hasClass('show-menu')) {
-//         $('#hamburguer__open').fadeOut('fast');
-//     } else if (!$("body").hasClass('show-menu')) {
-//         $('#hamburguer__open').fadeIn('fast');
-//     }
-//
 // });

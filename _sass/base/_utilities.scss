@@ -35,3 +35,15 @@
     text-align: center;
     display: block;
 }
+
+.fade {
+    transition: opacity .4s;
+}
+
+.fadeIn {
+    opacity: 1;
+}
+
+.fadeOut {
+    opacity: 0;
+}
