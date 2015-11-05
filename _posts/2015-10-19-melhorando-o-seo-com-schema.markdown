@@ -2,7 +2,7 @@
 title: "Melhorando o SEO com Schema.org na prática"
 layout: post
 date: 2015-10-19 14:40
-categories: seo
+tags: seo
 keywords:
 - seo
 - schema

@@ -30,11 +30,11 @@ title: Home
             {% endif %}
 
             <div class="main-post__meta {% if post.poster %}main-post__meta-{{ post.style }}{% endif %}">
-                {% if post.categories.size > 0 %}
-                    {% for category in post.categories %}{% if forloop.last == false %}
-                        {{ category }} e
+                {% if post.tags.size > 0 %}
+                    {% for tags in post.tags %}{% if forloop.last == false %}
+                        {{ tags }} e
                     {% else %}
-                        {{ category }}
+                        {{ tags }}
                     {% endif %}{% endfor %}
                 {% endif %}
                 <time class="main-post__date" datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b, %Y" }}</time>

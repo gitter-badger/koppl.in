@@ -2,7 +2,7 @@
 title: "Olá mundo"
 layout: post
 date: 2015-01-25 17:40
-categories: inicio
+tags: inicio
 star: true
 keywords:
 - inicio

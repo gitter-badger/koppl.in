@@ -2,7 +2,7 @@
 title: "Markdown Poster Dark"
 layout: post
 date: 2020-10-19 14:40
-categories: markdown
+tags: markdown
 poster: markdown/dark.png
 style: dark
 effect: reyes

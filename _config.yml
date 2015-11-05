@@ -18,9 +18,6 @@ paginate: 5
 # removendo do build
 exclude: [README.md, vendor, Gemfile, Gemfile.lock, Rakefile, node_modules, gulpfile.js, package.json, build, bower_components]
 
-# adicionando tag do disqus
-disqus: sergiokopplin
-
 # bio que vem no rodape dos posts
 bio: 'Baterista desde sempre. Atualmente trabalhando como Front-end Developer na Catho! Formado em Sistemas para Internet e Discípulo de Cristo'
 
@@ -42,6 +39,7 @@ title: 'Um baterista programador de Nárnia'
 permalink: /:title/
 
 # sociais
+disqus: sergiokopplin
 twitter: koppl1n
 email: sergiokopplin@gmail.com
 facebook: sergiokopplin

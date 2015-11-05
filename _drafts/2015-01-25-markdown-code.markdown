@@ -2,7 +2,7 @@
 title: "Markdown Code"
 layout: post
 date: 2020-10-19 14:40
-categories: markdown
+tags: markdown
 keywords:
 - markdown
 description: "Markdown Code!"

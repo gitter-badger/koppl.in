@@ -2,7 +2,7 @@
 title: "Markdown Poster Light"
 layout: post
 date: 2020-10-19 14:40
-categories: markdown
+tags: markdown
 poster: markdown/light.png
 style: light
 img: markdown/light.png

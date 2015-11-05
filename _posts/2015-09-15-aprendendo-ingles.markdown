@@ -2,7 +2,7 @@
 title: "Aprendendo Inglês"
 layout: post
 date: 2015-09-15 23:52
-categories: ingles
+tags: ingles
 keywords:
 - inglês
 - english
