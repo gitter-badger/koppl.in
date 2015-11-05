@@ -71,9 +71,11 @@ var Kopplin = {
     hamburguerActions: function( action ) {
         "use strict";
 
+        // Seleciona elementos a serem utilizados
         var hamburguerOpen = document.querySelector("#hamburguer__open").classList
             , docBody = document.querySelector("body");
 
+        // Verifica qual ação passada e executa o fechamento ou abertura do menu
         if (action == "open") {
             docBody.classList.add('show-menu');
             hamburguerOpen.remove('fadeIn');
@@ -94,11 +96,13 @@ var Kopplin = {
     hamburguerVisibility: function() {
         "use strict";
 
+        // Seleciona as classes do elemento do hamburguer
         var hamburguerOpen = document.querySelector("#hamburguer__open").classList;
 
+        // Verifica se houve scroll na página
         window.addEventListener("scroll", function( event ){
-            console.log(document.body.scrollTop);
 
+            // Verifica se houve scroll e se existe a classe no elemento para alterar a visibilidade do hamburguer
             if (document.body.scrollTop > 900 && !document.querySelector("body").classList.contains("show-menu")) {
                 hamburguerOpen.remove('fadeIn');
                 hamburguerOpen.add('fadeOut');
@@ -140,10 +144,12 @@ var Kopplin = {
     events: function() {
         "use strict";
 
+        // Seleciona elementos a seram utilizados
         var hamburguerOpen = document.querySelector("#hamburguer__open")
             , hamburguerClose = document.querySelector("#hamburguer__close")
             , scrollBtn = document.querySelector("[data-scroll]");
 
+        // Verifica se os elementos existem e adiciona eventos de click e keydown na página
         if ( hamburguerOpen && hamburguerClose ) {
             hamburguerOpen.addEventListener("click", function() {
                 Kopplin.hamburguerActions("open");
@@ -160,10 +166,9 @@ var Kopplin = {
             Kopplin.hamburguerVisibility();
         }
 
+        // Verifica se existe o botão de scroll e inicia a função
         if (scrollBtn) smoothScroll.init();
-
     }
-
 };
 
 (function() {
