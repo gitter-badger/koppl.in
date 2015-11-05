@@ -125,17 +125,24 @@ var Kopplin = {
         new Clipboard('.clipboard');
 
         // Seleciona todos os elementos pre na página
-        var numberOfPre = document.querySelectorAll("pre").length;
+        var preEl = document.querySelectorAll("pre")
+            , numberOfPre = preEl.length;
+
+        console.log(preEl);
+        console.log(numberOfPre);
 
         // Coloca o clipboard no rodapé de cada elemento encontrado
         if (numberOfPre > 0) {
             for(var id = 0; id < numberOfPre; id++) {
                 var selectedPre = document.querySelectorAll('pre')[id];
 
-                html = '';
-                html += '<button class="clipboard" data-clipboard-target="#preId' + id +'"><span class="btn-clipboard icon-paste" alt="copiar"></span></button>';
-                selectedPre.setAttribute('id', 'preId' + id);
-                selectedPre.insertAdjacentHTML('afterend', html);
+                // Verifica se o pre não tem números de linhas e adiciona clipboard
+                if (!selectedPre.querySelector(".lineno")) {
+                    html = '';
+                    html += '<button class="clipboard" data-clipboard-target="#preId' + id +'"><span class="btn-clipboard icon-paste" alt="copiar"></span></button>';
+                    selectedPre.setAttribute('id', 'preId' + id);
+                    selectedPre.insertAdjacentHTML('afterend', html);
+                }
             }
         }
     },
