@@ -8,18 +8,24 @@
     </nav>
 
     <div class="menu-side">
-        <a href="/">Home</a>
-        <a href="/sobre">Sobre</a>
-        <a href="http://github.com/sergiokopplin" target="_blank">Projetos</a>
-        <a href="/tags">Tags</a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="http://github.com/{{ site.githubProfile }}" target="_blank">Projetos</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul>
     </div>
-
-    <a class="menu-side__subscribe" href="{{ site.baseurl }}feed.xml" target="_blank"><span class="icon-feed"></span>inscreva-se</a>
 
     <div class="social-links">
         <a class="icon-twitter" target="_blank" href="http://twitter.com/{{ site.twitter }}"></a>
         <a class="icon-facebook" target="_blank" href="http://facebook.com/{{ site.facebook }}"></a>
         <a class="icon-github" target="_blank" href="http://github.com/{{ site.githubProfile }}"></a>
         <a class="icon-youtube" target="_blank" href="http://youtube.com/{{ site.youtube }}"></a>
+        <a class="icon-feed" target="_blank" href="{{ site.baseurl }}feed.xml"></a>
+    </div>
+
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="search...">
+        <ul id="results-container"></ul>
     </div>
 </div>
