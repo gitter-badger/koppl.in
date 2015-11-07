@@ -56,7 +56,6 @@ gulp.task('js', function() {
             'bower_components/trianglify/dist/trianglify.min.js',
             'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
             'bower_components/clipboard/dist/clipboard.js',
-            'bower_components/simple-jekyll-search/dest/jekyll-search.js',
             '_scripts/index.js'
         ])
         // .pipe(cache('js-cache'))
