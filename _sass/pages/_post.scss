@@ -48,5 +48,19 @@
             text-transform: lowercase;
             text-align: center;
         }
+
+        .side-by-side {
+            width: 150%;
+            margin: auto -25%;
+            font-size: 18px;
+            line-height: 29px;
+
+            img {
+                float: left;
+                width: 48%;
+                margin-right: 4%;
+                margin-bottom: 6%;
+            }
+        }
     }
 }

@@ -198,6 +198,26 @@ Just add the tag to the markdown file.
 star: true
 {% endhighlight %}
 
+---
+
+## Side Images
+
+You can add a image in side of a text.
+
+<div class="side-by-side">
+<img src="http://www.online-image-editor.com//styles/2014/images/example_image.png" />
+Paragraphs can be written like so. A paragraph is the basic block of Markdown. A paragraph is what text will turn into when there is no reason it should become anything else.
+</div><div class="clearfix"></div>
+
+{% highlight html %}
+<div class="side-by-side">
+    <img src="http://www.online-image-editor.com//styles/2014/images/example_image.png" />
+    Paragraphs can be written like so. A paragraph is the basic block of Markdown. A paragraph is what text will turn into when there is no reason it should become anything else.
+</div>
+<div class="clearfix"></div>
+{% endhighlight %}
+
+
 [1]: http://daringfireball.net/projects/markdown/
 [2]: http://www.fileformat.info/info/unicode/char/2163/index.htm
 [3]: http://www.markitdown.net/

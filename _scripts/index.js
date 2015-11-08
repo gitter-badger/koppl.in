@@ -121,14 +121,8 @@ var Kopplin = {
      */
     clipboards: function() {
 
-        console.group("novo grupo");
-
         // Cria uma nova instância do clipboard API
         new Clipboard('.clipboard');
-
-        console.log('grupo clipboard');
-
-        console.groupEnd();
 
         // Seleciona todos os elementos pre na página
         var preEl = document.querySelectorAll("pre")
