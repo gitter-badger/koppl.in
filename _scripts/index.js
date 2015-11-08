@@ -14,9 +14,6 @@ var Kopplin = {
 
         // Chama função com os eventos da página
         this.events();
-
-        // Inicia função do search
-        this.searchJson();
     },
 
     /**
@@ -150,27 +147,6 @@ var Kopplin = {
                     selectedPre.insertAdjacentHTML('afterend', html);
                 }
             }
-        }
-    },
-
-    /**
-     * searchJson
-     * @access public
-     * @desc Utiliza o json com todos os posts para fazer uma buscá rápida
-     * @return {void}
-     */
-    searchJson: function() {
-        var searchEl = document.getElementById('search-input')
-            , resultsEl = document.getElementById('results-container');
-
-        // Verifica se o elemento existe para não criar sem necessidade
-        if (searchEl) {
-            // Inicia a API do search via ajax
-            SimpleJekyllSearch({
-                searchInput: searchEl,
-                resultsContainer: resultsEl,
-                json: '/search.json'
-            })
         }
     },
 
