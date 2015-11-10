@@ -202,6 +202,7 @@ star: true
 
 ## Side Images
 
+
 You can add a image in side of a text.
 
 <div class="side-by-side">
