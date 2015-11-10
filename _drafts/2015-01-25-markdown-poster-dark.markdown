@@ -33,6 +33,7 @@ Paragraphs must be separated by a blank line. Basic formatting of *italics* and 
 2. A second item
 3. Number 3
 4. Ⅳ
+5.Ⅳ
 
 *Note: the fourth item uses the Unicode character for [Roman numeral four][2].*
 
