@@ -15,7 +15,7 @@ poster: aprendendo-ingles/bg.jpg
 style: dark
 ---
 
-O língua inglesa é essencial hoje em dia, essencial para conseguir um emprego melhor, para conversar com pessoas de fora do Brasil e também para visitar o Mickey. E por ele ser assim, tão importante, comecei a estudar intensamente para poder aprimorar e talvez conseguir, um dia, conseguir um emprego fora do Brasil.
+A língua inglesa é essencial hoje em dia, essencial para conseguir um emprego melhor, para conversar com pessoas de fora do Brasil e também para visitar o Mickey. E por ele ser assim, tão importante, comecei a estudar intensamente para poder aprimorar e talvez conseguir, um dia, conseguir um emprego fora do Brasil.
 
 A minha contribuição é mostrar as ferramentas que eu uso hoje, que são:
 

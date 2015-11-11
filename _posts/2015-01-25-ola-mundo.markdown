@@ -16,10 +16,6 @@ style: light
 ---
 Um novo blog acaba de surgir, nesse caso é o meu blog. Acredito que por ser meio perfeccionista, ele tenha demorado quase 1 ano pra ser terminado. Mas agora que consegui chegar num consenso entre meu lado front-end e meu lado back-end, acredito que posso seguir em frente.
 
-![Yellow](/assets/images/ola-mundo/yellow.jpg)
-
-<p class="img-legenda">fonte: google images</p>
-
 Pensando em "como as estrelas brilham pra mim", decidi que precisava de um site, de um blog, de um lugar meu na internet. Um lugar para as minhas idéias, meus estudos e talvez meus narcisismos.
 
 Nesse lugar eu pretendo conversar de WEB. Web do qual me apaixonei de 2 anos pra cá (2012) e que me fez trocar de profissão, (antigamente era <a href="http://pt.wiktionary.org/wiki/musicista" target="_blank">Musicista</a>) e que inclusive, me fez fazer uma faculdade.
