@@ -1,0 +1,66 @@
+.post {
+    position: relative;
+    width: 100%;
+    max-width: 610px;
+    margin: 5rem auto 0;
+    word-break: break-word;
+    hyphens: auto;
+
+    .post-content {
+        padding-bottom: 4rem;
+        margin-bottom: 2rem;
+        border-bottom: 4px solid $gama;
+
+        & blockquote p:nth-child(1)::first-letter {
+            font-size: inherit;
+            float: none;
+            margin: 0;
+            line-height: 1;
+            color: $alpha;
+        }
+
+        & p:nth-child(1)::first-letter {
+            font-family: $fontSerif;
+            font-size: 6rem;
+            font-weight: normal;
+            float: left;
+            margin: 15px 3px 0 0;
+            line-height: .5;
+            display: inline-block;
+            color: $beta;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .img-bigger {
+            width: 180%;
+            margin: 6rem -40%;
+        }
+
+        .img-description {
+            margin: -6.5rem auto 9rem auto;
+            display: block;
+            font-size: 13px;
+            font-family: $fontExtra;
+            color: $delta;
+            text-transform: lowercase;
+            text-align: center;
+        }
+
+        .side-by-side {
+            width: 150%;
+            margin: auto -25%;
+            font-size: 18px;
+            line-height: 29px;
+
+            img {
+                float: left;
+                width: 48%;
+                margin-right: 4%;
+                margin-bottom: 6%;
+            }
+        }
+    }
+}

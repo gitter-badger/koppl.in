@@ -1,0 +1,28 @@
+.site-footer {
+    position: relative;
+    margin: 10rem 0 3rem;
+    font-family: $fontExtra;
+    font-size: 12px;
+    color: $epsilon;
+    text-align: center;
+
+    .inner {
+        position: relative;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    a {
+        color: $epsilon;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: $alpha;
+    }
+
+    .site-footer__copyright {
+        display: block;
+    }
+}

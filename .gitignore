@@ -6,3 +6,5 @@ node_modules
 vendor
 npm-debug.log
 .bundle
+build
+bower_components

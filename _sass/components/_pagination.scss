@@ -1,0 +1,53 @@
+.main-pagination {
+    font-family: $fontSans;
+    font-size: 1.3rem;
+    color: $beta;
+    text-align: center;
+
+    .inner {
+        position: relative;
+        width: 80%;
+        max-width: 200px;
+        margin: 5rem auto;
+    }
+
+    a {
+        color: $alpha;
+        transition: all 0.2s ease;
+        font-family: Cardo, serif;
+    }
+
+    .main-pagination__older-posts,
+    .main-pagination__newer-posts {
+        position: absolute;
+        display: inline-block;
+        text-decoration: none;
+        transition: all ease-in-out 0.3s;
+        font-size: 30px;
+        border: 2px solid $gama;
+        padding: 0px;
+        line-height: 1;
+        height: 33px;
+        width: 35px;
+
+        &:hover {
+            color: $alpha;
+            border-color: $alpha;
+        }
+    }
+
+    .main-pagination__older-posts {
+        right: 0;
+    }
+
+    .main-pagination__page-number {
+        display: inline-block;
+        padding: 2px 0;
+        min-width: 100px;
+        color: $beta;
+    }
+
+    .main-pagination__newer-posts {
+        left: 0;
+    }
+}

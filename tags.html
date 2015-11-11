@@ -1,0 +1,35 @@
+---
+layout: tags
+title: "#tags"
+permalink: /tags/index.html
+description: "Procure os assuntos pelas tags."
+---
+
+{% for tag in site.tags  %}
+    <h2 class="tag__title">{{ tag[0] }}</h2>
+
+    <ul class="tag__list">
+        {% assign pages_list = tag[1] %}
+
+        {% for post in pages_list reversed %}
+            {% if post.title != null %}
+                {% if group == null or group == post.group %}
+                    <li>
+                        <a href="{{ post.url }}">
+                            <span class="tag__tag-title">{{ post.title }}</span>
+
+                            <span class="entry__date">
+                                / <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                                    {{ post.date | date: "%b, %Y" }}
+                                </time>
+                            </span>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+
+        {% assign group = nil %}
+    </ul>
+{% endfor %}

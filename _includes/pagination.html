@@ -1,13 +1,15 @@
-<nav class="pagination" role="pagination">
-    {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <a class="newer-posts" href="/" title="{{ site.newer_posts }}">&laquo; {{ site.newer_posts }}</a>
-        {% else %}
-            <a class="newer-posts" href="/page{{ paginator.previous_page }}/" title="{{ site.newer_posts }}">&laquo; {{ site.newer_posts }}</a>
-      {% endif %}
-    {% endif %}
-    <span class="page-number"> Página {{paginator.page}} de {{paginator.total_pages}} </span>
-    {% if paginator.next_page %}
-        <a class="older-posts" href="/page{{ paginator.next_page }}/" title="{{ site.older_posts }}">{{ site.older_posts }} &raquo;</a>
-    {% endif %}
+<nav class="main-pagination" role="pagination">
+    <div class="inner">
+        {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+                <a class="main-pagination__newer-posts" href="/#content" title="{{ site.newer_posts }}">+</a>
+            {% else %}
+                <a class="main-pagination__newer-posts" href="/page{{ paginator.previous_page }}/#content" title="{{ site.newer_posts }}">+</a>
+          {% endif %}
+        {% endif %}
+        <span class="main-pagination__page-number">{{paginator.page}} / {{paginator.total_pages}}</span>
+        {% if paginator.next_page %}
+            <a class="main-pagination__older-posts" href="/page{{ paginator.next_page }}/#content" title="{{ site.older_posts }}">-</a>
+        {% endif %}
+    </div>
 </nav>

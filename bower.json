@@ -1,0 +1,26 @@
+{
+  "name": "kopplin-website",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Sergio Kopplin <sergiokopplin@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/sergiokopplin/kopplin-website",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "cssgram": "*",
+    "normalize-css": "~3.0.3",
+    "trianglify": "~0.3.1",
+    "clipboard": "~1.5.3",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.1.1",
+    "simple-jekyll-search": "~1.0.8"
+  }
+}

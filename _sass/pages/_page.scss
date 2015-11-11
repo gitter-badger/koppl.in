@@ -1,0 +1,23 @@
+.page {
+    position: relative;
+    width: 100%;
+    max-width: 610px;
+    margin: 5rem auto;
+    padding-bottom: 4rem;
+    word-break: break-word;
+    hyphens: auto;
+
+    .page-content {
+
+        & p:nth-child(1)::first-letter {
+            font-family: $fontSerif;
+            font-size: 6rem;
+            font-weight: normal;
+            float: left;
+            margin: 15px 3px 0 0;
+            line-height: .5;
+            display: inline-block;
+            color: $beta;
+        }
+    }
+}

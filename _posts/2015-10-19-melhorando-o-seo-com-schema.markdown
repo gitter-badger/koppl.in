@@ -2,7 +2,7 @@
 title: "Melhorando o SEO com Schema.org na prática"
 layout: post
 date: 2015-10-19 14:40
-categories: seo
+tags: seo
 keywords:
 - seo
 - schema
@@ -11,10 +11,6 @@ keywords:
 - meta-data
 - semantyc
 description: "Melhore o posicionamento e como os robôs entendem o seu site com o Schema.org."
-trilha_nome: John Mayer - XO
-trilha: https://open.spotify.com/track/7cpCU3Denug5NGZsSpQl8v
-img: schema/main.jpg
-comments: true
 related:
   - title: "Loop Infinito - Microdata"
     url: http://loopinfinito.com.br/2012/05/07/ganhando-visibilidade-com-schema-org
@@ -27,14 +23,11 @@ related:
   - title: "Google Developers Testing Tool"
     url: https://developers.google.com/structured-data/testing-tool/
     from: googledevelopers
-
 ---
 
-SEO é um termo muito utilizado quando tratamos de desenvolvimento WEB, e uma das técnicas que
+Seo é um termo muito utilizado quando tratamos de desenvolvimento web, e uma das técnicas que
 podem nos ajudar nesse processo é a de identificar corretamente o conteúdo de nosso site
-através do Schema.org.
-
-Dentro do [Schema.org][s] você encontra todas as tags necessários e sua documentação,
+através do Schema.org. Dentro do [Schema.org][s] você encontra todas as tags necessários e sua documentação,
 e depois de aplicá-las você pode testar na ferramenta do Google dedicada para isso,
 [Structured Data Testing Tool][g].
 

@@ -1,61 +1,30 @@
 ---
 layout: default
-post_class: post-template
 ---
 
-<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
-        <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
-        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Inscreva-se</a>
-    </nav>
-</header>
+{% include menu.html %}
 
-<main class="content" role="main">
+<div class="content-wrap">
+
+    {% include header.html %}
+
     <article class="post" role="article">
-        <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-
-            <section class="post-meta">
-                <time class="page-date" datetime="{{ page.date | date:"%d-%m-%Y" }}">
-                    {{ page.date | date_to_string }}
-                </time>
-                {% if page.categories.size > 0 %}
-                    em
-                    {% for category in page.categories %}{% if forloop.last == false %}
-                        <a href="{{ site.baseurl }}categorias/#{{ category }}">{{ category }}</a> e
-                    {% else %}
-                        <a href="{{ site.baseurl }}categorias/#{{ category }}">{{ category }}</a>
-                    {% endif %}{% endfor %}
-                {% endif %}
-
-                {% if page.trilha_nome %}
-                    |
-                    <a href="{{ page.trilha }}" target="_blank">{{ page.trilha_nome }}</a>
-                {% endif %}
-
-                {% if page.passagem %}
-                    |
-                    <a href="{{ page.passagem_link }}" target="_blank">{{ page.passagem }}</a>
-                {% endif %}
-            </section>
-        </header>
-
-        <section class="post-content">
+        <section class="post-content" id="content">
             {{content}}
+
+            {% include share.html %}
         </section>
 
         <footer class="post-footer">
-            <figure class="author-image">
-                <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.picture }})"></a>
-            </figure>
+            {% include related.html %}
 
-            <section class="author">
-                <h4>{{ site.name }}</h4>
-                <p>{{ site.bio }}</p>
-            </section>
+            {% include author.html %}
 
-            {% include share.html %}
+            <div class="clearfix"></div>
+
             {% include disqus.html %}
+
+            {% include footer.html %}
         </footer>
     </article>
-</main>
+</div>

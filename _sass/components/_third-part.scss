@@ -1,0 +1,58 @@
+.gist {
+    table {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+
+    .gist .line-number {
+        min-width: 25px;
+        font-size: 1.1rem;
+    }
+}
+
+.emoji {
+    display: inline-block !important;
+    padding: 0 !important;
+}
+
+.highlight {
+    position: relative;
+
+    button {
+        position: absolute;
+        right: 1px;
+        bottom: 1px;
+        height: 24px;
+        font-size: 12px;
+        font-family: arial;
+        padding: 5px 6px;
+        line-height: 1;
+        background: #fff;
+        border: none;
+        border-top-left-radius: 3px;
+        color: $alpha;
+
+        &:hover:after {
+            content: "copiar";
+            background: $alpha;
+            position: absolute;
+            top: -25px;
+            left: -11px;
+            color: #fff;
+            display: block;
+            width: 47px;
+            padding: 5px 0;
+            border-radius: 2px;
+        }
+    }
+}
+
+.disqus {
+    margin-top: 10rem;
+}
+
+.github-action {
+    display: inline;
+    width: 12rem;
+    margin: 0 0 3rem;
+}

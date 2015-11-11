@@ -2,7 +2,7 @@
 title: "Aprendendo Inglês"
 layout: post
 date: 2015-09-15 23:52
-categories: ingles
+tags: ingles
 keywords:
 - inglês
 - english
@@ -10,17 +10,14 @@ keywords:
 - howto
 - duolingo
 description: "Olá, já parou para estudar inglês hoje? Pois é, tenho feito isso durante algum tempo e queria colocar as ferramentas que eu uso aqui nesse post para ajudar outras pessoas."
-trilha_nome: Foo Fighters - My Hero
-trilha: https://open.spotify.com/track/7u5dBtASrtOuBTTZjJrvuJ
 img: aprendendo-ingles/bg.jpg
-
+poster: aprendendo-ingles/bg.jpg
+style: dark
 ---
 
-O inglês é essencial hoje em dia, e como não temos como fugir disso, então bora aprender.
+A língua inglesa é essencial hoje em dia, essencial para conseguir um emprego melhor, para conversar com pessoas de fora do Brasil e também para visitar o Mickey. E por ele ser assim, tão importante, comecei a estudar intensamente para poder aprimorar e talvez conseguir, um dia, conseguir um emprego fora do Brasil.
 
-![Yellow](/assets/images/aprendendo-ingles/bg.jpg)
-
-<p class="img-legenda">fonte: google images</p>
+A minha contribuição é mostrar as ferramentas que eu uso hoje, que são:
 
 ###Inglês Particular: [Privy English](http://privyenglish.com.br/)
 Faço inglês particular com uma amiga e isso fez toda a diferença. Ainda que façamos a aula (1 hora) e não tenha um conteúdo programado, acabamos por conversar 1 hora somente em inglês de coisas da vida. **E ISSO FAZ TODA A DIFERENÇA**. O preço é acessível e eu faço via Skype.

@@ -1,0 +1,27 @@
+<div class="menu-wrap">
+    <nav class="page-header__nav">
+        <a href="javascript:void(0)" class="hamburguer fade" id="hamburguer__close">
+            <div class="menui hamburguer__top-menu hamburguer__top-animate"></div>
+            <div class="menui hamburguer__mid-menu hamburguer__mid-animate"></div>
+            <div class="menui hamburguer__bottom-menu hamburguer__bottom-animate"></div>
+        </a>
+    </nav>
+
+    <div class="menu-side">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="http://github.com/{{ site.githubProfile }}" target="_blank">Projetos</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul>
+    </div>
+
+    <div class="social-links">
+        <a class="icon-twitter" target="_blank" href="http://twitter.com/{{ site.twitter }}"><span class="hidden">Twitter</span></a>
+        <a class="icon-facebook" target="_blank" href="http://facebook.com/{{ site.facebook }}"><span class="hidden">Facebook</span></a>
+        <a class="icon-github" target="_blank" href="http://github.com/{{ site.githubProfile }}"><span class="hidden">Github</span></a>
+        <a class="icon-youtube" target="_blank" href="http://youtube.com/{{ site.youtube }}"><span class="hidden">Youtube</span></a>
+    </div>
+
+    <a class="icon-feed" target="_blank" href="{{ site.baseurl }}feed.xml"><span class="hidden">Feed</span></a>
+</div>
