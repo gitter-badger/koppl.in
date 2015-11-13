@@ -25,7 +25,7 @@ Tenho estudado muito sobre o mundo do front-end e o que ele tem a oferecer. A ve
 
 Uma das coisas que me fez criar um blog, tanto quanto o resto das coisas na vida, foi a influência. Influência de ver outros compartilhando conteúdo, criando conteúdo, compartilhando ideias, ...
 
-####Influências
+#### Influências
 Nesse caminho, tenho alguns específicos e gostaria de citá-los:
 
 * @vitorbritto - [vitorbritto.com.br](http://www.vitorbritto.com.br/blog/) - uma referência.
