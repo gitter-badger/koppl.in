@@ -53,11 +53,6 @@ A estrutura básica de arquivos é organizada da seguinte forma:
 `-- ...
 ```
 
-## TODO
-
-- [ ] melhor descrição da estrutura de arquivos - [#1](../../issues/1)
-- [ ] melhor descrição dos outros comandos do jekyll - [#2](../../issues/2)
-
 ## Problemas?
 
 Abra uma issua caso tenha maiores problemas, ok? Eu ficarei feliz em ajudar :bowtie:
