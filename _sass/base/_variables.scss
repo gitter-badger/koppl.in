@@ -5,10 +5,16 @@ $fontMonospace: "Monaco", "Consolas", "Inconsolata", monospace, sans-serif;
 $fontExtra: arial, sans-serif;
 
 // ~ Colors
-$alpha: #424242;
+$alpha:   #424242;
 
-$beta: #222;
-$gama: #edf0f1;
-$delta: #dbddde;
+$beta:    #222222;
+$gama:    #edf0f1;
+$delta:   #dbddde;
 $epsilon: #807c7c;
-$zeta: #3b5998;
+$zeta:    #3b5998;
+
+// ~ media queries
+$small:      "screen and (max-width: 568px)";
+$medium:     "screen and (max-width: 768px)";
+$large:      "screen and (max-width: 1024px)";
+$extraLarge: "screen and (max-width: 1280px)";
