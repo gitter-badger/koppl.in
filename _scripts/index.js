@@ -101,9 +101,12 @@ var Kopplin = {
 
         // Verifica se houve scroll na página
         window.addEventListener("scroll", function( event ){
-
+            // Verifica o tamanho do dispositivo
+            if (document.documentElement.clientHeight < 568 && document.body.scrollTop > 300) {
+                hamburguerOpen.remove('fadeIn');
+                hamburguerOpen.add('fadeOut');
             // Verifica se houve scroll e se existe a classe no elemento para alterar a visibilidade do hamburguer
-            if (document.body.scrollTop > 900 && !document.querySelector("body").classList.contains("show-menu")) {
+            } else if (document.body.scrollTop > 900 && !document.querySelector("body").classList.contains("show-menu")) {
                 hamburguerOpen.remove('fadeIn');
                 hamburguerOpen.add('fadeOut');
             } else if (!document.querySelector("body").classList.contains("show-menu")) {
