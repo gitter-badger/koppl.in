@@ -122,6 +122,18 @@
         text-transform: uppercase;
         letter-spacing: 0;
         font-size: 12rem;
+
+        @media #{$small} {
+            font-size: 5rem;
+        }
+
+        @media #{$medium} {
+            font-size: 7rem;
+        }
+
+        @media #{$large} {
+            font-size: 10rem;
+        }
     }
 }
 

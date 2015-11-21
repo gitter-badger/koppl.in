@@ -8,7 +8,32 @@
     hyphens: auto;
 
     .page-content {
+        @media #{$small} {
+            margin: 0 3%;
 
+            iframe[allowfullscreen] {
+                margin-left: -3%;
+                width: 106%;
+            }
+
+            img[alt="Perfil"] {
+                width: 200px;
+            }
+        }
+
+        @media #{$medium} {
+            margin: 0 3%;
+
+            iframe[allowfullscreen] {
+                margin-left: -3%;
+                width: 106%;
+            }
+
+            img[alt="Perfil"] {
+                width: 250px;
+            }
+        }
+        
         & p:nth-child(1)::first-letter {
             font-family: $fontSerif;
             font-size: 6rem;
