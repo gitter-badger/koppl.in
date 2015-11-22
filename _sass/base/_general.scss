@@ -33,27 +33,103 @@ h1 {
     font-size: 5rem;
     letter-spacing: -2px;
     text-indent: -3px;
+
+    @media #{$small} {
+        font-size: 2.8rem;
+        letter-spacing: -1px;
+    }
+
+    @media #{$medium} {
+        font-size: 3.2rem;
+        letter-spacing: -1px;
+    }
+
+    @media #{$large} {
+        font-size: 4.5rem;
+        letter-spacing: -2px;
+    }
 }
 
 h2 {
     font-size: 3.6rem;
     letter-spacing: -1px;
+
+    @media #{$small} {
+        font-size: 2.4rem;
+        letter-spacing: 0;
+    }
+
+    @media #{$medium} {
+        font-size: 2.8rem;
+    }
+
+    @media #{$large} {
+        font-size: 3.6rem;
+    }
 }
 
 h3 {
     font-size: 3rem;
+
+    @media #{$small} {
+        font-size: 2.1rem;
+    }
+
+    @media #{$medium} {
+        font-size: 2.5rem;
+    }
+
+    @media #{$large} {
+        font-size: 2.8rem;
+    }
 }
 
 h4 {
     font-size: 2.5rem;
+
+    @media #{$small} {
+        font-size: 1.9rem;
+    }
+
+    @media #{$medium} {
+        font-size: 2.2rem;
+    }
+
+    @media #{$large} {
+        font-size: 2.4rem;
+    }
 }
 
 h5 {
     font-size: 2rem;
+
+    @media #{$small} {
+        font-size: 1.8rem;
+    }
+
+    @media #{$medium} {
+        font-size: 1.8rem;
+    }
+
+    @media #{$large} {
+        font-size: 1.9rem;
+    }
 }
 
 h6 {
     font-size: 2rem;
+
+    @media #{$small} {
+        font-size: 1.8rem;
+    }
+
+    @media #{$medium} {
+        font-size: 1.8rem;
+    }
+
+    @media #{$large} {
+        font-size: 1.9rem;
+    }
 }
 
 a {
@@ -132,6 +208,11 @@ blockquote {
     margin: 1.75em 0 1.75em -2.2em;
     padding: 0 0 0 1.75em;
     border-left: $alpha 0.4em solid;
+
+    @media #{$small} {
+        padding: 0 0 0 2rem;
+        margin-left: -3.5%;
+    }
 }
 
 blockquote p {

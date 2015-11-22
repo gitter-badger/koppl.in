@@ -37,29 +37,9 @@ Esse site usa [Jekyll][jekyll], um gerador de arquivos estáticos baseados em Ru
 
 Agora você pode testar seu maravilhoso site em jekyll na url  `localhost:4000`.
 
-## Estrutura de Arquivos
-
-A estrutura básica de arquivos é organizada da seguinte forma:
-
-```
-.
-|-- _includes
-|-- _layouts
-|-- _plugins
-|-- _posts
-|-- _site
-|-- assets
-|-- _config.yml
-`-- ...
-```
-
 ## Problemas?
 
-Abra uma issua caso tenha maiores problemas, ok? Eu ficarei feliz em ajudar :bowtie:
-
-## Créditos
-
-Inspirado por Zeno Rocha, Hugo Bessa, Vitor Britto e William Justen.
+Abra uma issue caso tenha maiores problemas, ok? Eu ficarei feliz em ajudar :bowtie:
 
 ## Licença
 

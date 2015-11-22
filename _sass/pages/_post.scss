@@ -7,9 +7,18 @@
     hyphens: auto;
 
     .post-content {
-        padding-bottom: 4rem;
-        margin-bottom: 2rem;
-        border-bottom: 4px solid $gama;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $gama;
+
+        @media #{$small} {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        @media #{$medium} {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
 
         & blockquote p:nth-child(1)::first-letter {
             font-size: inherit;
@@ -32,15 +41,45 @@
 
         img {
             width: 100%;
+
+            @media #{$small} {
+                width: 106%;
+                margin-left: -3%;
+            }
         }
 
         .img-bigger {
             width: 180%;
             margin: 6rem -40%;
+
+            @media #{$small} {
+                width: 106%;
+                margin-left: -3%;
+            }
+        }
+
+        .img-smaller {
+            width: 100%;
+            margin: 2rem auto;
+
+            @media #{$small} {
+                width: 106%;
+                margin-left: -3%;
+            }
         }
 
         .img-description {
             margin: -6.5rem auto 9rem auto;
+            display: block;
+            font-size: 13px;
+            font-family: $fontExtra;
+            color: $delta;
+            text-transform: lowercase;
+            text-align: center;
+        }
+
+        .img-description-small {
+            margin: -1.5rem auto 4rem auto;
             display: block;
             font-size: 13px;
             font-family: $fontExtra;
@@ -54,6 +93,21 @@
             margin: auto -25%;
             font-size: 18px;
             line-height: 29px;
+
+            @media #{$small} {
+                width: 100%;
+                margin-left: 0%;
+            }
+
+            @media #{$medium} {
+                width: 100%;
+                margin-left: 0%;
+            }
+
+            @media #{$large} {
+                width: 120%;
+                margin-left: -10%;
+            }
 
             img {
                 float: left;

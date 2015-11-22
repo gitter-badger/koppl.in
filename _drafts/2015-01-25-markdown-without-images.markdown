@@ -154,6 +154,16 @@ Markdown can also contain images. I'll need to add something here sometime.
 ![Markdowm Image][http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg]
 {% endhighlight %}
 
+... with description
+
+![Markdowm Image][6]{: .img-smaller}
+<span class="img-description-small">Legenda da imagem</span>
+
+{% highlight raw %}
+![Markdowm Image][http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg]{: .img-smaller}
+<span class="img-description-small">Legenda da imagem</span>
+{% endhighlight %}
+
 Or you can add bigger images. BIGGER!
 
 ![Alt text][6]{: .img-bigger}
