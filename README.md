@@ -1,5 +1,5 @@
 # Sérgio A. Kopplin ~ [koppl.in][sitelink]
-[![travis]][Travis]
+[![travis]][Travis] [![tag]][Tag]
 
 Website pessoal onde eu falo da vida e da tecnologia.
 
@@ -47,7 +47,8 @@ Abra uma issue caso tenha maiores problemas, ok? Eu ficarei feliz em ajudar :bow
 
 [sitelink]: http://koppl.in
 [twitter]: http://i.imgur.com/tXSoThF.png
-[travis]: https://travis-ci.org/sergiokopplin/kopplin-website.svg
+[travis]: https://img.shields.io/travis/sergiokopplin/kopplin-website.svg
+[tag]: https://img.shields.io/github/release/sergiokopplin/kopplin-website.svg
 [jekyll]: http://jekyllrb.com/
 [git]: http://git-scm.com/downloads
 [ruby]: http://www.ruby-lang.org/pt/downloads/
