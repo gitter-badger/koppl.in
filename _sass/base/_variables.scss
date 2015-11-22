@@ -14,6 +14,7 @@ $epsilon: #807c7c;
 $zeta:    #3b5998;
 
 // ~ media queries
+$extraSmall: "screen and (max-width: 360px)";
 $small:      "screen and (max-width: 568px)";
 $medium:     "screen and (min-width: 569px) and (max-width: 768px)";
 $large:      "screen and (min-width: 769px) and (max-width: 1024px)";

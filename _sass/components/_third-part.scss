@@ -49,6 +49,10 @@
 
 .disqus {
     margin-top: 10rem;
+
+    @media #{$small} {
+        padding: 0 10px;
+    }
 }
 
 .github-action {

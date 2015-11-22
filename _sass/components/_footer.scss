@@ -6,6 +6,10 @@
     color: $epsilon;
     text-align: center;
 
+    @media #{$small} {
+        margin-top: 5rem;
+    }
+
     .inner {
         position: relative;
         width: 80%;

@@ -11,6 +11,11 @@
         margin-bottom: 2rem;
         border-bottom: 4px solid $gama;
 
+        @media #{$small} {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
         & blockquote p:nth-child(1)::first-letter {
             font-size: inherit;
             float: none;
@@ -32,11 +37,21 @@
 
         img {
             width: 100%;
+
+            @media #{$small} {
+                width: 106%;
+                margin-left: -3%;
+            }
         }
 
         .img-bigger {
             width: 180%;
             margin: 6rem -40%;
+
+            @media #{$small} {
+                width: 106%;
+                margin-left: -3%;
+            }
         }
 
         .img-description {

@@ -4,9 +4,21 @@
     height: 200px;
     border-bottom: 4px solid $gama;
 
+    @media #{$small} {
+        padding: 0 10px 0;
+        height: auto;
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
     .author__picture {
         max-width: 140px;
         border-radius: 100%;
+
+        @media #{$small} {
+            max-width: 80px;
+        }
     }
 
     .author__name {
@@ -23,6 +35,10 @@
         text-align: justify;
         line-height: 1.5;
         margin-bottom: 1rem;
+
+        @media #{$small} {
+            line-height: 1.3;
+        }
     }
 
     .author__marker,
@@ -32,6 +48,11 @@
         font-size: 13px;
         display: inline-block;
         font-family: $fontExtra;
+
+        @media #{$small} {
+            width: 100%;
+            margin: 0 !important;
+        }
 
         a {
             color: inherit;
@@ -60,10 +81,21 @@
     .author__left {
         width: 27%;
         float: left;
+
+        @media #{$small} {
+            width: 100%;
+            float: none;
+        }
     }
 
     .author__right {
         width: 73%;
         float: left;
+
+        @media #{$small} {
+            width: 100%;
+            float: none;
+            margin-bottom: 2rem;
+        }
     }
 }
