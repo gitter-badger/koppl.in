@@ -1,4 +1,4 @@
-# Sérgio A. Kopplin ~ [koppl.in][sitelink]
+# Sérgio A. Kopplin ~ [http://koppl.in][sitelink]
 [![travis]][Travis] [![tag]][Tag]
 
 Website pessoal onde eu falo da vida e da tecnologia.
