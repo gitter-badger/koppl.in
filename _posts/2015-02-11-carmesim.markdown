@@ -20,7 +20,6 @@ A set of custom UI themes for Sublime Text 2/3 based on [Spacegray](https://gith
 *All the credits to the creators of themes Dracula and Spacegray!*
 
 ![image](/assets/images/carmesim/carmesim.png)
-
-fonte: github.com/sergiokopplin/carmesim
+<span class="img-description">fonte: github.com/sergiokopplin/carmesim</span>
 
 Confira: [Carmesim](https://packagecontrol.io/packages/Theme%20-%20Carmesim).

@@ -58,8 +58,28 @@
             }
         }
 
+        .img-smaller {
+            width: 100%;
+            margin: 2rem auto;
+
+            @media #{$small} {
+                width: 106%;
+                margin-left: -3%;
+            }
+        }
+
         .img-description {
             margin: -6.5rem auto 9rem auto;
+            display: block;
+            font-size: 13px;
+            font-family: $fontExtra;
+            color: $delta;
+            text-transform: lowercase;
+            text-align: center;
+        }
+
+        .img-description-small {
+            margin: -1.5rem auto 4rem auto;
             display: block;
             font-size: 13px;
             font-family: $fontExtra;
