@@ -16,6 +16,11 @@
             padding-right: 3%;
         }
 
+        @media #{$medium} {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
         & blockquote p:nth-child(1)::first-letter {
             font-size: inherit;
             float: none;
