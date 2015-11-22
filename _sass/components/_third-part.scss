@@ -51,7 +51,8 @@
     margin-top: 10rem;
 
     @media #{$small} {
-        padding: 0 10px;
+        padding: 0 2rem;
+        margin-top: 5rem;
     }
 }
 

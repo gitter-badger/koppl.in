@@ -7,9 +7,8 @@
     hyphens: auto;
 
     .post-content {
-        padding-bottom: 4rem;
-        margin-bottom: 2rem;
-        border-bottom: 4px solid $gama;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $gama;
 
         @media #{$small} {
             padding-left: 3%;

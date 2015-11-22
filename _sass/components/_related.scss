@@ -1,11 +1,8 @@
 .related {
     position: relative;
-    border-bottom: 4px solid $gama;
-    padding-top: 4rem;
-
-    @media #{$small} {
-        padding-top: 2rem;
-    }
+    width: 100%;
+    border-bottom: 2px solid $gama;
+    padding: 4rem 0;
 
     .related__span {
         font-size: 14px;
@@ -19,12 +16,14 @@
         top: 50px;
     }
 
-    // modifying home style
     .main-post {
-        margin: 0rem auto 3rem !important;
+        margin: 0rem;
 
-        @media #{$small} {
-            margin-bottom: 2rem !important;
+        @media #{$large} {
+            .main-post__poster {
+                width: 96%;
+                margin: 0 2%;
+            }
         }
     }
 
