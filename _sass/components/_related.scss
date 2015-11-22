@@ -14,15 +14,48 @@
         position: absolute;
         z-index: 99;
         top: 50px;
+        left: -70px;
+
+        @media #{$small} {
+            left: 0;
+        }
+
+        @media #{$medium} {
+            left: 0;
+        }
     }
 
     .main-post {
-        margin: 0rem;
+        margin: 0;
+        width: 120%;
 
-        @media #{$large} {
-            .main-post__poster {
-                width: 96%;
-                margin: 0 2%;
+        @media #{$small} {
+            width: 100%;
+        }
+
+        @media #{$medium} {
+            width: 100%;
+        }
+
+        .main-post__poster {
+            width: 120%;
+            margin: 0 -10%;
+            // height: 300px;
+
+            @media #{$extraSmall} {
+                width: 100%;
+                margin: 0;
+                height: 212px;;
+            }
+
+            @media #{$small} {
+                width: 100%;
+                margin: 0;
+            }
+
+            @media #{$medium} {
+                width: 100%;
+                margin: 0;
             }
         }
     }
