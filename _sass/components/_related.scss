@@ -3,6 +3,10 @@
     border-bottom: 4px solid $gama;
     padding-top: 4rem;
 
+    @media #{$small} {
+        padding-top: 2rem;
+    }
+
     .related__span {
         font-size: 14px;
         font-family: arial, sans-serif;
@@ -18,9 +22,18 @@
     // modifying home style
     .main-post {
         margin: 0rem auto 3rem !important;
+
+        @media #{$small} {
+            margin-bottom: 2rem !important;
+        }
     }
 
     .main-post__title {
         font-size: 40px;
+
+        @media #{$small} {
+            font-size: 25px;
+            top: 88px !important;
+        }
     }
 }
