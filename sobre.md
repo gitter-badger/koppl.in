@@ -11,7 +11,7 @@ Atualmente trabalho na [Catho Online][catho] e faço parte do time de desenvolvi
 
 ![Perfil][img]{:class="center"}{:style="margin: 0 auto; width: 300px; border-radius: 100%;"}
 
-Sou discípulo e membro da [IPI][ipi] desde sempre, e é lá que eu demonstro todo o meu talento musical como baterista. Você também pode me contrar nas redes socias [Facebook][f], [Twitter][t], [Spotify][s], [Youtube][y], [Github][g], [SlideShare][ss] e no [E-mail][e].
+Sou discípulo e membro da [IPI][ipi] desde sempre, e é lá que eu demonstro todo o meu talento musical como baterista. Você também pode me contrar nas redes socias [Facebook][f], [Spotify][s], [Youtube][y], [Github][g], [SlideShare][ss] e no [E-mail][e].
 
 O código desse site está aberto e disponível no [Github][github].
 
@@ -23,7 +23,6 @@ Mas apesar desse site ser sobre desenvolvimento você também pode dar uma olhad
 <iframe width="700" height="394" src="//www.youtube.com/embed/videoseries?list=PLEOSK5h2UUqVC3U2_NygtskxAaLW0DfUK" frameborder="0" allowfullscreen></iframe>
 
 [f]: http://facebook.com/sergiokopplin
-[t]: http://twitter.com/koppl1n
 [s]: http://open.spotify.com/user/1259926422
 [y]: http://youtube.com/sergiokopplin
 [g]: http://github.com/sergiokopplin
