@@ -13,12 +13,14 @@ Atualmente trabalho na [Catho Online][catho] e faço parte do time de desenvolvi
 
 Sou discípulo e membro da [IPI][ipi] desde sempre, e é lá que eu demonstro todo o meu talento musical como baterista. Você também pode me contrar nas redes socias [Facebook][f], [Spotify][s], [Youtube][y], [Github][g], [SlideShare][ss] e no [E-mail][e].
 
+Você pode conferir os softwares, hardware e setup que eu uso, [aqui][setup].
+
 O código desse site está aberto e disponível no [Github][github].
 
 <iframe src="https://ghbtns.com/github-btn.html?user={{ site.githubProfile }}&repo={{ site.githubRep }}&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" class="github-action" height="30px"></iframe>
 <iframe src="https://ghbtns.com/github-btn.html?user={{ site.githubProfile }}&repo={{ site.githubRep }}&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" class="github-action" height="30px"></iframe>
 
-Mas apesar desse site ser sobre desenvolvimento você também pode dar uma olhada nos meus trabalhos como baterista no meu canal do [Youtube][y] ou conferir a playlist abaixo:
+Apesar desse site ser sobre desenvolvimento você também pode dar uma olhada nos meus trabalhos como baterista no meu canal do [Youtube][y] ou conferir a playlist abaixo:
 
 <iframe width="700" height="394" src="//www.youtube.com/embed/videoseries?list=PLEOSK5h2UUqVC3U2_NygtskxAaLW0DfUK" frameborder="0" allowfullscreen></iframe>
 
@@ -32,4 +34,5 @@ Mas apesar desse site ser sobre desenvolvimento você também pode dar uma olhad
 [img]: {{ site.picture }}
 [catho]: http://www.catho.com.br/
 [ipi]: http://www.ipib.org/
+[setup]: http://sergiokopplin.github.io/setups/
 [github]: {{ site.github }}

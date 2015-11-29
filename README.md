@@ -3,44 +3,6 @@
 
 Website pessoal onde eu falo da vida e da tecnologia.
 
-## Como funciona?
-
-Esse site usa [Jekyll][jekyll], um gerador de arquivos estáticos baseados em Ruby.
-
-## Primeiros Passos:
-
-1. Instalar [Git][git] e [Ruby][ruby].
-
-2. Assim que tiver tudo instalado, instale também o [Jekyll][jekyll] com o seguinte comando:
-
-    ```sh
-    $ gem install jekyll
-    ```
-
-3. Agora clone o projeto:
-
-    ```sh
-    $ git clone git@github.com:sergiokopplin/koppl.in.git meujekyll
-    ```
-
-4. Entre na pasta criada:
-
-    ```sh
-    $ cd meujekyll
-    ```
-
-5. E por último, o seguinte comando:
-
-    ```sh
-    $ jekyll server --watch
-    ```
-
-Agora você pode testar seu maravilhoso site em jekyll na url  `localhost:4000`.
-
-## Problemas?
-
-Abra uma issue caso tenha maiores problemas, ok? Eu ficarei feliz em ajudar :bowtie:
-
 ## Licença
 
 [MIT][mit] Licença © Sérgio Kopplin
