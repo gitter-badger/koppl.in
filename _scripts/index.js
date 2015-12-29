@@ -44,7 +44,6 @@ var Kopplin = {
         , randomSize = Math.floor(Math.random() * 60) + 20
         , randomVariance = Math.random()
 
-
         // menu
         , randomColor2 = Math.floor(Math.random() * (colors.length))
         , randomSize2 = Math.floor(Math.random() * 60) + 20
@@ -143,7 +142,7 @@ var Kopplin = {
 
         // Seleciona todos os elementos pre na página
         var preEl = document.querySelectorAll("pre")
-            , numberOfPre = preEl.length;
+        , numberOfPre = preEl.length;
 
         // Coloca o clipboard no rodapé de cada elemento encontrado
         if (numberOfPre > 0) {
@@ -172,9 +171,9 @@ var Kopplin = {
 
         // Seleciona elementos a seram utilizados
         var hamburguerOpen = document.querySelector("#hamburguer__open")
-            , hamburguerClose = document.querySelector("#hamburguer__close")
-            , scrollBtn = document.querySelector("[data-scroll]"),
-            preEl = document.querySelector("pre");
+        , hamburguerClose = document.querySelector("#hamburguer__close")
+        , scrollBtn = document.querySelector("[data-scroll]")
+        , preEl = document.querySelector("pre");
 
         // Verifica se os elementos existem e adiciona eventos de click e keydown na página
         if ( hamburguerOpen && hamburguerClose ) {
