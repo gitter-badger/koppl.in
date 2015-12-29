@@ -65,6 +65,7 @@
     }
 }
 
+.home-header .menui,
 .post-header .menui,
 .page-header .menui {
     transition: 0.6s ease;
@@ -73,6 +74,7 @@
     left: 15px;
 }
 
+.home-header__nav .menui,
 .page-header__nav .menui,
 .page-header__nav .menui {
     transition: 0.6s ease;
