@@ -44,6 +44,12 @@ var Kopplin = {
         , randomSize = Math.floor(Math.random() * 60) + 20
         , randomVariance = Math.random()
 
+
+        // menu
+        , randomColor2 = Math.floor(Math.random() * (colors.length))
+        , randomSize2 = Math.floor(Math.random() * 60) + 20
+        , randomVariance2 = Math.random()
+
         // Elementos que usarão o background com Trianglify
         , mainHeader = document.querySelector('.main-header')
         , menuWrap = document.querySelector('.menu-wrap')
@@ -55,11 +61,19 @@ var Kopplin = {
             variance: .7,
             cell_size: randomSize,
             x_colors: colors[randomColor]
+        })
+
+        , menu = Trianglify({
+            width: window.innerWidth,
+            height: window.innerHeight,
+            variance: .7,
+            cell_size: randomSize2,
+            x_colors: colors[randomColor2]
         });
 
         // Aplica o Trianglify se o elemento existir
         if ( mainHeader ) mainHeader.setAttribute('style', 'background-image: url(' + triangle.png() + ')');
-        if ( menuWrap ) menuWrap.setAttribute('style', 'background-image: url(' + triangle.png() + ')');
+        if ( menuWrap ) menuWrap.setAttribute('style', 'background-image: url(' + menu.png() + ')');
     },
 
     /**

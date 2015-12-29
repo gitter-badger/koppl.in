@@ -1,24 +1,30 @@
-{% if page.class == 'page-template' %}
-    <header class="page-header">
+{% if page.class == 'home-template' %}
+    <header class="home-header">
         {% include hamburguer.html %}
-
-        <div class="inner">
-            <h1 class="page-header__title">{{ page.title }}</h1>
-        </div>
     </header>
 {% else %}
-    <header class="post-header">
-        {% include hamburguer.html %}
+    {% if page.class == 'page-template' %}
+        <header class="page-header">
+            {% include hamburguer.html %}
 
-        <div class="post-header__content {% if page.poster %}post-header__poster post-header__poster-{{ page.style }}" style="background: url({{ site.baseurl }}assets/images/{{ page.poster }}){% endif %}">
             <div class="inner">
-                <h1 class="post-header__title">{{ page.title }}</h1>
+                <h1 class="page-header__title">{{ page.title }}</h1>
+            </div>
+        </header>
+    {% else %}
+        <header class="post-header">
+            {% include hamburguer.html %}
 
-                <div class="post-header__meta">
-                    <a href="#">{{ page.tags }}</a>
-                    <time class="main-post__date" datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%b, %Y" }}</time>
+            <div class="post-header__content {% if page.poster %}post-header__poster post-header__poster-{{ page.style }}" style="background: url({{ site.baseurl }}assets/images/{{ page.poster }}){% endif %}">
+                <div class="inner">
+                    <h1 class="post-header__title">{{ page.title }}</h1>
+
+                    <div class="post-header__meta">
+                        <a href="#">{{ page.tags }}</a>
+                        <time class="main-post__date" datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%b, %Y" }}</time>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
+    {% endif %}
 {% endif %}

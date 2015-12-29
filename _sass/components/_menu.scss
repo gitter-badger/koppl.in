@@ -109,3 +109,17 @@
     overflow-y: auto;
     z-index: 9;
 }
+
+.show-menu .home-wrap {
+    transform: translate3d(250px,0,0);
+}
+
+.home-wrap {
+    transition-duration: .3s;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 9;
+    height: 100%;
+}
