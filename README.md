@@ -1,4 +1,6 @@
 # Sérgio A. Kopplin ~ [http://koppl.in][sitelink]
+
+[![Join the chat at https://gitter.im/sergiokopplin/koppl.in](https://badges.gitter.im/sergiokopplin/koppl.in.svg)](https://gitter.im/sergiokopplin/koppl.in?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![travis]][Travis] [![tag]][Tag]
 
 ---
