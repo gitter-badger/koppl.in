@@ -53,7 +53,11 @@ $ bundle install
 
 ---
 
-## Credits
+## Created by
+
+[![Sérgio Kopplin](https://avatars.githubusercontent.com/u/2743180?s=130)](http://koppl.in)
+---
+[Sérgio Kopplin](http://koppl.in)
 
 ---
 
