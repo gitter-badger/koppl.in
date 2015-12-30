@@ -1,11 +1,21 @@
 # Sérgio A. Kopplin ~ [http://koppl.in][sitelink]
 [![travis]][Travis] [![tag]][Tag]
 
-Website pessoal onde eu falo da vida e da tecnologia.
+---
+
+## O que é?
+
+Meu website pessoal, onde tem posts, meus projetos e minhas redes sociais.
+
+O Código é aberto e pode ser usado por outros. (E DEVE SER USADO :smile:)
 
 ---
 
-## Instalando
+## Configuração
+
+---
+
+## Instalação
 
 ```
 $ npm install
@@ -21,9 +31,34 @@ $ bundle install
 
 ---
 
+## Instruções
+
+---
+
 ## Licença
 
 [MIT][mit] Licença © Sérgio Kopplin
+
+---
+
+## Contato
+
+---
+
+## Bugs
+
+---
+
+## Troubleshooting
+
+---
+
+## Credits
+
+---
+
+## Changelog
+
 
 [sitelink]: http://koppl.in
 [twitter]: http://i.imgur.com/tXSoThF.png
